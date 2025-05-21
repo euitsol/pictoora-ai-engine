@@ -1,15 +1,16 @@
-from typing import Union
-
-from fastapi import FastAPI
+import uvicorn
+from fastapi import FastAPI, Request
+from fastapi.templating import Jinja2Templates
+from fastapi.responses import HTMLResponse
+from fastapi.staticfiles import StaticFiles
 
 app = FastAPI()
 
+templates = Jinja2Templates(directory="views")
 
 @app.get("/")
-async def read_root():
-    return {"Hello": "World"}
+async def home(request: Request):
+    return templates.TemplateResponse("home/index.html", {"request": request})
 
-
-@app.get("/items/{item_id}")
-async def read_item(item_id: int, q: Union[str, None] = None):
-    return {"item_id": item_id, "q": q}
+if __name__ == "__main__":
+    uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True)
