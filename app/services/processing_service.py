@@ -3,6 +3,61 @@ from typing import Dict
 from app.models.schemas import ProcessStatus, ProcessResponse
 from app.config.settings import settings
 from fastapi import BackgroundTasks
+from app.utils.exceptions import APIException
+
+
+class ProcessValidator:
+    def validate(self, book_details: dict):
+        message = []
+        if not book_details.get("book_id") or not book_details.get("pages"):
+            message.append(
+                code="book_id",
+                message="Invalid book details"
+            )
+        if not book_details.get("user_id"):
+            message.append(
+                code="user_id",
+                message="Invalid user details"
+            )
+        if not book_details.get("pages"):
+            message.append(
+                code="pages",
+                message="Invalid pages details"
+            )
+        if not book_details.get("pages").get("id"):
+            message.append(
+                code="pages.id",
+                message="Invalid pages id"
+            )
+        if not book_details.get("pages").get("source_url"):
+            message.append(
+                code="pages.source_url",
+                message="Invalid pages source_url"
+            )
+        if not book_details.get("pages").get("target_url"):
+            message.append(
+                code="pages.target_url",
+                message="Invalid pages target_url"
+            )
+        if not book_details.get("pages").get("prompt"):
+            message.append(
+                code="pages.prompt",
+                message="Invalid pages prompt"
+            )
+        if not book_details.get("pages").get("style"):
+            message.append(
+                code="pages.style",
+                message="Invalid pages style"
+            )
+        
+        if(message):    
+            raise APIException(
+                status_code=422,
+                error_type="validation_error",
+                messages=message,
+                details={"book_details": book_details}
+            )
+            
 
 class ProcessingService:
     def __init__(self):

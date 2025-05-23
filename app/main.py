@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from app.routers import images, processing
 from fastapi.middleware.cors import CORSMiddleware
+from app.utils.exceptions import APIException, api_exception_handler
 
 app = FastAPI()
 
@@ -14,6 +15,9 @@ app.add_middleware(
 
 app.include_router(images.router)
 app.include_router(processing.router)
+
+# Add exception handler
+app.add_exception_handler(APIException, api_exception_handler)
 
 @app.get("/")
 def read_root():

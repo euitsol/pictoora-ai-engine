@@ -11,6 +11,7 @@ class ProcessStatus(str, Enum):
 class PageData(BaseModel):
     id: int
     source_url: str
+    target_url: str
     prompt: str
     style: str
 

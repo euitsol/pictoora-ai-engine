@@ -4,7 +4,7 @@ from app.models.schemas import ErrorResponse
 
 class APIException(Exception):
     def __init__(self, 
-        status_code: int = 400,
+        status_code: int = 422,
         error_type: str = "generic_error",
         message: str = "An error occurred",
         code: int = 1000,
@@ -25,5 +25,5 @@ async def api_exception_handler(request: Request, exc: APIException):
     )
     return JSONResponse(
         status_code=exc.status_code,
-        content=error_response.dict()
+        content=error_response.model_dump()
     )

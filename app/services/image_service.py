@@ -17,7 +17,7 @@ class ImageValidator:
         
         if file_size > cls.MAX_FILE_SIZE:
             raise APIException(
-                status_code=413,
+                status_code=422,
                 error_type="validation_error",
                 message=f"File size exceeds maximum allowed size of {cls.MAX_FILE_SIZE} bytes",
                 code=1001,
@@ -27,7 +27,7 @@ class ImageValidator:
         file_format = imghdr.what(file.file)
         if file_format not in cls.ALLOWED_FORMATS:
             raise APIException(
-                status_code=400,
+                status_code=422,
                 error_type="validation_error",
                 message="Invalid file format",
                 code=1002,
@@ -53,15 +53,13 @@ class ImageService:
             
             return f"{settings.BASE_URL}/{settings.STORAGE_PATH}/{file_name}"
             
-        except APIException:
-            # Re-raise the original exception without modification
-            raise
+        except APIException as e:
+            raise e
         except Exception as e:
-            # Handle unexpected exceptions with default values
             raise APIException(
                 status_code=500,
                 error_type="server_error",
-                message="Failed to save image",
-                code=1000,  # Default error code
-                details={"internal_error": str(e)}
+                message="An error occurred while processing the image",
+                code=1003,
+                details={"error": str(e)}
             )
