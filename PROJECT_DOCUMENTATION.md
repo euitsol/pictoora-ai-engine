@@ -1,4 +1,3 @@
-
 # Taleified AI Engine Documentation
 
 ## Project Overview
