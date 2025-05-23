@@ -1,7 +1,6 @@
 from fastapi import APIRouter, BackgroundTasks
 from app.models.schemas import BookDetails, ProcessResponse
 from app.services.processing_service import processing_service
-from app.services.processing_service import ProcessValidator
 from app.utils.exceptions import APIException
 
 router = APIRouter(prefix="/process", tags=["processing"])
@@ -9,14 +8,11 @@ router = APIRouter(prefix="/process", tags=["processing"])
 @router.post("/book", response_model=ProcessResponse)
 async def process_book(
     book_details: BookDetails,
-    image_url: str,
     background_tasks: BackgroundTasks
 ):
     try:
-        ProcessValidator().validate(book_details.model_dump())
         return await processing_service.start_processing(
             book_details.model_dump(),
-            image_url,
             background_tasks
         )
     except APIException as e:

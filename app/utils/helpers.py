@@ -3,19 +3,19 @@ from fastapi import UploadFile
 class Helper:
     @staticmethod
     def generate_book_id():
-        return str(uuid.uuid4())
+        return 'book_' + str(uuid.uuid4())
     
     @staticmethod
     def generate_page_id():
-        return str(uuid.uuid4())
+        return 'page_' + str(uuid.uuid4())
     
     @staticmethod
     def generate_user_id():
-        return str(uuid.uuid4())
+        return 'user_' + str(uuid.uuid4())
     
     @staticmethod
     def generate_process_id():
-        return str(uuid.uuid4())
+        return 'process_' + str(uuid.uuid4())
     
     @staticmethod
     def file_name(file: UploadFile):
