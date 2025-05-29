@@ -14,6 +14,7 @@ class PageData(BaseModel):
     target_url: str
     prompt: str
     style: str
+    status: ProcessStatus = ProcessStatus.PENDING
 
 class BookDetails(BaseModel):
     user_id: str
@@ -24,6 +25,7 @@ class ProcessResponse(BaseModel):
     process_id: str
     status: ProcessStatus
     message: Optional[str] = None
+    output_url: Optional[str] = None
     
 class ErrorResponse(BaseModel):
     error_type: str = Field(..., example="validation_error")
