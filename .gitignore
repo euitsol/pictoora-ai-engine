@@ -12,6 +12,7 @@ __pycache__/
 build/
 storage/
 logs/
+venv/
 develop-eggs/
 dist/
 downloads/

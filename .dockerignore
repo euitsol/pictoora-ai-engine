@@ -1,0 +1,58 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+bin/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+
+# Virtual Environment
+venv/
+.env
+.venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+
+# Logs and Storage
+logs/*
+storage/*
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Test
+.coverage
+.tox/
+nosetests.xml
+htmlcov/
+.pytest_cache/
+
+# Documentation
+docs/
+*.md
+
+# Misc
+.DS_Store
+*.swp
+*.swo 
