@@ -77,8 +77,8 @@ pictoora/
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/pictoora.git
-cd pictoora
+https://github.com/euitsol/pictoora-ai-engine.git
+cd pictoora-ai-engine
 ```
 
 2. Create and activate virtual environment:
@@ -99,8 +99,8 @@ pip install -r requirements.txt
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/pictoora.git
-cd pictoora
+https://github.com/euitsol/pictoora-ai-engine.git
+cd pictoora-ai-engine
 ```
 
 2. Create and activate virtual environment:
@@ -159,8 +159,8 @@ uvicorn app.main:app --reload
    - System validates file type (png, jpg, jpeg)
    - Files are stored in `storage/uploads` with unique names
    - Returns file ID for future reference
-
 2. **Image Processing Workflow**:
+
    ```
    [Client]
       │
@@ -187,27 +187,23 @@ uvicorn app.main:app --reload
    - Path: `GET /api/v1/`
    - Purpose: Welcome message
    - Auth: Not required
-
 2. **Health Check**
 
    - Path: `GET /api/v1/health`
    - Purpose: System health monitoring
    - Auth: Not required
-
 3. **File Upload**
 
    - Path: `POST /api/v1/upload`
    - Purpose: Upload image files
    - Auth: Required (X-API-Key header)
    - Returns: File path and URL
-
 4. **Process Initiation**
 
    - Path: `POST /api/v1/initiate-process`
    - Purpose: Start new processing session
    - Auth: Required
    - Returns: Unique init_id
-
 5. **Book Processing**
 
    - Path: `POST /api/v1/process/book`
@@ -215,15 +211,14 @@ uvicorn app.main:app --reload
    - Auth: Required
    - Body: init_id, source_url, target_url, prompt
    - Returns: Process status
-
 6. **Process Status**
 
    - Path: `POST /api/v1/process/status`
    - Purpose: Check processing status
    - Auth: Required
    - Returns: Current status and result URL
-
 7. **Cache Status**
+
    - Path: `GET /api/v1/cache/status`
    - Purpose: Monitor cache system
    - Auth: Required
@@ -256,15 +251,14 @@ uvicorn app.main:app --reload
    - Automatic unique filename generation
    - File size: Limited by FastAPI default
    - Proper file path handling with Path
-
 2. **API Authentication**:
 
    - Header: X-API-Key
    - Required for all endpoints except / and /health
    - Configurable through .env file
    - Middleware-based validation
-
 3. **Process Validation**:
+
    - Valid init_id required for processing
    - Source and target files must exist
    - Valid OpenAI API key required
@@ -282,8 +276,8 @@ uvicorn app.main:app --reload
    - Automatic cleanup of expired items
    - Memory usage monitoring
    - Cache statistics endpoint
-
 2. **Cache Operations**:
+
    - get/set operations with O(1) complexity
    - Custom expiration time support
    - Error handling and logging

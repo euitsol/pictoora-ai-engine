@@ -1,0 +1,8 @@
+# Application Configuration
+APP_NAME=Pictoora
+APP_URL=http://localhost:8000
+
+# OpenAI Configuration
+OPENAI_API_KEY="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"
+
+
