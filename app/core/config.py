@@ -15,6 +15,7 @@ class Settings(BaseSettings):
     OPENAI_API_KEY: Optional[str] = os.getenv("OPENAI_API_KEY")
     UPLOAD_DIR: str = "storage/uploads"
     APP_URL: str = os.getenv("APP_URL", "http://localhost:8000")
+    LOG_LEVEL: str = os.getenv("LOG_LEVEL", "DEBUG")
 
     class Config:
         case_sensitive = True
