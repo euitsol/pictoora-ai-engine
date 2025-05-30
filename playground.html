@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pictoora API Playground</title>
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <!-- Lucide Icons -->
-  <script src="https://unpkg.com/lucide@latest"></script>
-  <style>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pictoora API Playground</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
     .step-active {
       border-color: #0ea5e9;
       background-color: #e0f2fe;
@@ -47,267 +47,347 @@
       animation: spin 1s linear infinite;
     }
 
+    #imageModal {
+      display: none;
+    }
+
+
     @keyframes spin {
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
     }
   </style>
-</head>
-<body class="bg-gray-50 min-h-screen">
-  <div class="container mx-auto px-4 py-8">
-    <!-- Header -->
-    <header class="mb-8">
-      <div class="flex items-center justify-between">
-        <div class="flex items-center space-x-2">
-          <i data-lucide="image" class="h-8 w-8 text-sky-500"></i>
-          <h1 class="text-2xl font-bold text-gray-800">Pictoora API Playground</h1>
+  </head>
+  <body class="bg-gray-50 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+      <!-- Header -->
+      <header class="mb-8">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center space-x-2">
+            <i data-lucide="image" class="h-8 w-8 text-sky-500"></i>
+            <h1 class="text-2xl font-bold text-gray-800">Pictoora API
+              Playground</h1>
+          </div>
+          <div class="flex items-center space-x-4">
+            <button id="healthCheck"
+              class="flex items-center space-x-2 px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-md text-sm font-medium transition-colors">
+              <i data-lucide="activity" class="h-4 w-4"></i>
+              <span>Health Check</span>
+            </button>
+            <div class="relative">
+              <input id="apiKey" type="text" placeholder="API Key"
+                class="px-4 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent" />
+              <button id="saveApiKey"
+                class="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600">
+                <i data-lucide="save" class="h-4 w-4"></i>
+              </button>
+            </div>
+          </div>
         </div>
-        <div class="flex items-center space-x-4">
-          <button id="healthCheck" class="flex items-center space-x-2 px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-md text-sm font-medium transition-colors">
-            <i data-lucide="activity" class="h-4 w-4"></i>
-            <span>Health Check</span>
-          </button>
-          <div class="relative">
-            <input id="apiKey" type="text" placeholder="API Key" class="px-4 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent" />
-            <button id="saveApiKey" class="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600">
-              <i data-lucide="save" class="h-4 w-4"></i>
+      </header>
+
+      <!-- Workflow Diagram -->
+      <div class="mb-8 bg-white p-6 rounded-lg shadow-sm">
+        <h2 class="text-lg font-semibold mb-4 text-gray-800">Processing
+          Workflow</h2>
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div id="step1"
+            class="step-pending flex flex-col items-center p-4 border-2 rounded-lg mb-4 md:mb-0 w-full md:w-40 cursor-pointer">
+            <i data-lucide="play" class="h-6 w-6 mb-2"></i>
+            <span class="text-sm font-medium text-center">1. Initiate
+              Process</span>
+          </div>
+          <div class="hidden md:block">
+            <i data-lucide="arrow-right" class="h-5 w-5 text-gray-400"></i>
+          </div>
+          <div id="step2"
+            class="step-pending flex flex-col items-center p-4 border-2 rounded-lg mb-4 md:mb-0 w-full md:w-40 cursor-pointer">
+            <i data-lucide="upload" class="h-6 w-6 mb-2"></i>
+            <span class="text-sm font-medium text-center">2. Upload Files</span>
+          </div>
+          <div class="hidden md:block">
+            <i data-lucide="arrow-right" class="h-5 w-5 text-gray-400"></i>
+          </div>
+          <div id="step3"
+            class="step-pending flex flex-col items-center p-4 border-2 rounded-lg mb-4 md:mb-0 w-full md:w-40 cursor-pointer">
+            <i data-lucide="book" class="h-6 w-6 mb-2"></i>
+            <span class="text-sm font-medium text-center">3. Process Book</span>
+          </div>
+          <div class="hidden md:block">
+            <i data-lucide="arrow-right" class="h-5 w-5 text-gray-400"></i>
+          </div>
+          <div id="step4"
+            class="step-pending flex flex-col items-center p-4 border-2 rounded-lg mb-4 md:mb-0 w-full md:w-40 cursor-pointer">
+            <i data-lucide="cpu" class="h-6 w-6 mb-2"></i>
+            <span class="text-sm font-medium text-center">4. Background
+              Processing</span>
+          </div>
+          <div class="hidden md:block">
+            <i data-lucide="arrow-right" class="h-5 w-5 text-gray-400"></i>
+          </div>
+          <div id="step5"
+            class="step-pending flex flex-col items-center p-4 border-2 rounded-lg mb-4 md:mb-0 w-full md:w-40 cursor-pointer">
+            <i data-lucide="check-circle" class="h-6 w-6 mb-2"></i>
+            <span class="text-sm font-medium text-center">5. Check Status</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Loading Screen -->
+      <div id="loadingScreen"
+        class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+          <div class="mb-4">
+            <div
+              class="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-sky-500"></div>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Processing Image</h3>
+          <p class="text-gray-600">Please wait while AI processes your
+            image...</p>
+          <div class="mt-4 text-sm text-gray-500">
+            <span id="processingTime">0</span> seconds elapsed
+          </div>
+        </div>
+      </div>
+
+      <!-- Image Modal -->
+      <div id="imageModal"
+        class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+          <img src="" alt="Image" class="w-full h-auto">
+        </div>
+      </div>
+
+      <!-- Main Content Area -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <!-- Left Panel: API Interaction -->
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <h2 class="text-lg font-semibold mb-4 text-gray-800">API
+            Interaction</h2>
+
+          <!-- Step 1: Initiate Process -->
+          <div id="initiateProcessPanel" class="mb-6 hidden">
+            <h3 class="text-md font-medium mb-3 text-gray-700">Initiate
+              Process</h3>
+            <p class="text-sm text-gray-500 mb-4">Start a new processing session
+              to get an init_id.</p>
+            <button id="initiateProcessBtn"
+              class="w-full px-4 py-2 bg-sky-500 hover:bg-sky-600 text-white rounded-md text-sm font-medium transition-colors">
+              Initiate Process
             </button>
           </div>
-        </div>
-      </div>
-    </header>
 
-    <!-- Workflow Diagram -->
-    <div class="mb-8 bg-white p-6 rounded-lg shadow-sm">
-      <h2 class="text-lg font-semibold mb-4 text-gray-800">Processing Workflow</h2>
-      <div class="flex flex-col md:flex-row justify-between items-center">
-        <div id="step1" class="step-pending flex flex-col items-center p-4 border-2 rounded-lg mb-4 md:mb-0 w-full md:w-40 cursor-pointer">
-          <i data-lucide="play" class="h-6 w-6 mb-2"></i>
-          <span class="text-sm font-medium text-center">1. Initiate Process</span>
-        </div>
-        <div class="hidden md:block">
-          <i data-lucide="arrow-right" class="h-5 w-5 text-gray-400"></i>
-        </div>
-        <div id="step2" class="step-pending flex flex-col items-center p-4 border-2 rounded-lg mb-4 md:mb-0 w-full md:w-40 cursor-pointer">
-          <i data-lucide="upload" class="h-6 w-6 mb-2"></i>
-          <span class="text-sm font-medium text-center">2. Upload Files</span>
-        </div>
-        <div class="hidden md:block">
-          <i data-lucide="arrow-right" class="h-5 w-5 text-gray-400"></i>
-        </div>
-        <div id="step3" class="step-pending flex flex-col items-center p-4 border-2 rounded-lg mb-4 md:mb-0 w-full md:w-40 cursor-pointer">
-          <i data-lucide="book" class="h-6 w-6 mb-2"></i>
-          <span class="text-sm font-medium text-center">3. Process Book</span>
-        </div>
-        <div class="hidden md:block">
-          <i data-lucide="arrow-right" class="h-5 w-5 text-gray-400"></i>
-        </div>
-        <div id="step4" class="step-pending flex flex-col items-center p-4 border-2 rounded-lg mb-4 md:mb-0 w-full md:w-40 cursor-pointer">
-          <i data-lucide="cpu" class="h-6 w-6 mb-2"></i>
-          <span class="text-sm font-medium text-center">4. Background Processing</span>
-        </div>
-        <div class="hidden md:block">
-          <i data-lucide="arrow-right" class="h-5 w-5 text-gray-400"></i>
-        </div>
-        <div id="step5" class="step-pending flex flex-col items-center p-4 border-2 rounded-lg mb-4 md:mb-0 w-full md:w-40 cursor-pointer">
-          <i data-lucide="check-circle" class="h-6 w-6 mb-2"></i>
-          <span class="text-sm font-medium text-center">5. Check Status</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Loading Screen -->
-    <div id="loadingScreen" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
-      <div class="bg-white p-8 rounded-lg shadow-lg text-center">
-        <div class="mb-4">
-          <div class="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-sky-500"></div>
-        </div>
-        <h3 class="text-lg font-semibold mb-2">Processing Image</h3>
-        <p class="text-gray-600">Please wait while DALL-E processes your image...</p>
-        <div class="mt-4 text-sm text-gray-500">
-          <span id="processingTime">0</span> seconds elapsed
-        </div>
-      </div>
-    </div>
-
-    <!-- Main Content Area -->
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-      <!-- Left Panel: API Interaction -->
-      <div class="bg-white p-6 rounded-lg shadow-sm">
-        <h2 class="text-lg font-semibold mb-4 text-gray-800">API Interaction</h2>
-        
-        <!-- Step 1: Initiate Process -->
-        <div id="initiateProcessPanel" class="mb-6 hidden">
-          <h3 class="text-md font-medium mb-3 text-gray-700">Initiate Process</h3>
-          <p class="text-sm text-gray-500 mb-4">Start a new processing session to get an init_id.</p>
-          <button id="initiateProcessBtn" class="w-full px-4 py-2 bg-sky-500 hover:bg-sky-600 text-white rounded-md text-sm font-medium transition-colors">
-            Initiate Process
-          </button>
-        </div>
-
-        <!-- Step 2: Upload Files -->
-        <div id="uploadFilesPanel" class="mb-6 hidden">
-          <h3 class="text-md font-medium mb-3 text-gray-700">Upload Files</h3>
-          <p class="text-sm text-gray-500 mb-4">Upload image files (png, jpg, jpeg).</p>
-          <div class="mb-4">
-            <label class="block text-sm font-medium text-gray-700 mb-1">Source Image</label>
-            <div class="flex items-center">
-              <input id="sourceFile" type="file" accept=".png,.jpg,.jpeg" class="hidden" />
-              <button id="sourceFileBtn" class="flex-1 px-4 py-2 border border-gray-300 rounded-md text-sm font-medium bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent">
-                Choose File
-              </button>
-              <span id="sourceFileName" class="ml-2 text-sm text-gray-500">No file chosen</span>
-            </div>
-          </div>
-          <div class="mb-4">
-            <label class="block text-sm font-medium text-gray-700 mb-1">Target Image (Optional)</label>
-            <div class="flex items-center">
-              <input id="targetFile" type="file" accept=".png,.jpg,.jpeg" class="hidden" />
-              <button id="targetFileBtn" class="flex-1 px-4 py-2 border border-gray-300 rounded-md text-sm font-medium bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent">
-                Choose File
-              </button>
-              <span id="targetFileName" class="ml-2 text-sm text-gray-500">No file chosen</span>
-            </div>
-          </div>
-          <button id="uploadFilesBtn" class="w-full px-4 py-2 bg-sky-500 hover:bg-sky-600 text-white rounded-md text-sm font-medium transition-colors">
-            Upload Files
-          </button>
-        </div>
-
-        <!-- Step 3: Process Book -->
-        <div id="processBookPanel" class="mb-6 hidden">
-          <h3 class="text-md font-medium mb-3 text-gray-700">Process Book</h3>
-          <p class="text-sm text-gray-500 mb-4">Process images with AI using the provided prompt.</p>
-          
-          <div class="grid grid-cols-2 gap-4 mb-4">
-            <div>
-              <label class="block text-sm font-medium text-gray-700 mb-1">Age</label>
-              <input id="promptAge" type="text" placeholder="25" class="w-full px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent" />
-            </div>
-            <div>
-              <label class="block text-sm font-medium text-gray-700 mb-1">Gender</label>
-              <select id="promptGender" class="w-full px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent">
-                <option value="male">Male</option>
-                <option value="female" selected>Female</option>
-                <option value="non-binary">Non-binary</option>
-              </select>
-            </div>
-          </div>
-          
-          <div class="grid grid-cols-2 gap-4 mb-4">
-            <div>
-              <label class="block text-sm font-medium text-gray-700 mb-1">Race</label>
-              <input id="promptRace" type="text" placeholder="Asian" class="w-full px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent" />
-            </div>
-            <div>
-              <label class="block text-sm font-medium text-gray-700 mb-1">Expression</label>
-              <input id="promptExpression" type="text" placeholder="smiling" class="w-full px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent" />
-            </div>
-          </div>
-          
-          <div class="mb-4">
-            <label class="block text-sm font-medium text-gray-700 mb-1">Hairstyle</label>
-            <input id="promptHairstyle" type="text" placeholder="long straight black hair" class="w-full px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent" />
-          </div>
-          
-          <div class="mb-4">
-            <label class="block text-sm font-medium text-gray-700 mb-1">Clothing</label>
-            <input id="promptClothing" type="text" placeholder="casual business attire" class="w-full px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent" />
-          </div>
-          
-          <div class="grid grid-cols-2 gap-4 mb-4">
-            <div>
-              <label class="block text-sm font-medium text-gray-700 mb-1">Background</label>
-              <input id="promptBackground" type="text" placeholder="neutral studio" class="w-full px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent" />
-            </div>
-            <div>
-              <label class="block text-sm font-medium text-gray-700 mb-1">Lighting</label>
-              <input id="promptLighting" type="text" placeholder="soft natural light" class="w-full px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent" />
-            </div>
-          </div>
-          
-          <button id="processBookBtn" class="w-full px-4 py-2 bg-sky-500 hover:bg-sky-600 text-white rounded-md text-sm font-medium transition-colors">
-            Process Book
-          </button>
-        </div>
-
-        <!-- Step 5: Check Status -->
-        <div id="checkStatusPanel" class="mb-6 hidden">
-          <h3 class="text-md font-medium mb-3 text-gray-700">Check Status</h3>
-          <p class="text-sm text-gray-500 mb-4">Check the processing status of your request.</p>
-          <button id="checkStatusBtn" class="w-full px-4 py-2 bg-sky-500 hover:bg-sky-600 text-white rounded-md text-sm font-medium transition-colors">
-            Check Status
-          </button>
-        </div>
-
-        <!-- Default Panel -->
-        <div id="defaultPanel">
-          <h3 class="text-md font-medium mb-3 text-gray-700">Welcome to Pictoora API Playground</h3>
-          <p class="text-sm text-gray-500 mb-4">Click on any step in the workflow diagram above to begin testing the API.</p>
-          <div class="p-4 bg-gray-50 rounded-md">
-            <div class="flex items-center space-x-2 text-gray-600">
-              <i data-lucide="info" class="h-5 w-5"></i>
-              <span class="text-sm">Enter your API key in the top right corner to get started.</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Right Panel: Response & Results -->
-      <div class="bg-white p-6 rounded-lg shadow-sm">
-        <h2 class="text-lg font-semibold mb-4 text-gray-800">Response & Results</h2>
-        
-        <!-- Session Info -->
-        <div id="sessionInfo" class="mb-4 p-4 bg-gray-50 rounded-md hidden">
-          <h3 class="text-md font-medium mb-2 text-gray-700">Session Information</h3>
-          <div class="grid grid-cols-2 gap-2 text-sm">
-            <div class="font-medium">Init ID:</div>
-            <div id="sessionInitId" class="font-mono">-</div>
-            <div class="font-medium">Process ID:</div>
-            <div id="sessionProcessId" class="font-mono">-</div>
-            <div class="font-medium">Page ID:</div>
-            <div id="sessionPageId" class="font-mono">-</div>
-            <div class="font-medium">Status:</div>
-            <div id="sessionStatus">-</div>
-          </div>
-        </div>
-        
-        <!-- Image Preview -->
-        <div id="imagePreview" class="mb-4 hidden">
-          <h3 class="text-md font-medium mb-2 text-gray-700">Image Preview</h3>
-          <div class="grid grid-cols-2 gap-4">
-            <div>
-              <p class="text-sm text-gray-500 mb-1">Source Image</p>
-              <div id="sourceImageContainer" class="h-40 bg-gray-100 rounded-md flex items-center justify-center">
-                <span class="text-sm text-gray-400">No image</span>
+          <!-- Step 2: Upload Files -->
+          <div id="uploadFilesPanel" class="mb-6 hidden">
+            <h3 class="text-md font-medium mb-3 text-gray-700">Upload Files</h3>
+            <p class="text-sm text-gray-500 mb-4">Upload image files (png, jpg,
+              jpeg).</p>
+            <div class="mb-4">
+              <label class="block text-sm font-medium text-gray-700 mb-1">Source
+                Image</label>
+              <div class="flex items-center">
+                <input id="sourceFile" type="file" accept=".png,.jpg,.jpeg"
+                  class="hidden" />
+                <button id="sourceFileBtn"
+                  class="flex-1 px-4 py-2 border border-gray-300 rounded-md text-sm font-medium bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent">
+                  Choose File
+                </button>
+                <span id="sourceFileName" class="ml-2 text-sm text-gray-500">No
+                  file chosen</span>
               </div>
             </div>
-            <div>
-              <p class="text-sm text-gray-500 mb-1">Processed Image</p>
-              <div id="processedImageContainer" class="h-40 bg-gray-100 rounded-md flex items-center justify-center">
-                <span class="text-sm text-gray-400">No image</span>
+            <div class="mb-4">
+              <label class="block text-sm font-medium text-gray-700 mb-1">Target
+                Image (Optional)</label>
+              <div class="flex items-center">
+                <input id="targetFile" type="file" accept=".png,.jpg,.jpeg"
+                  class="hidden" />
+                <button id="targetFileBtn"
+                  class="flex-1 px-4 py-2 border border-gray-300 rounded-md text-sm font-medium bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent">
+                  Choose File
+                </button>
+                <span id="targetFileName" class="ml-2 text-sm text-gray-500">No
+                  file chosen</span>
               </div>
             </div>
-          </div>
-        </div>
-        
-        <!-- API Response -->
-        <div>
-          <div class="flex items-center justify-between mb-2">
-            <h3 class="text-md font-medium text-gray-700">API Response</h3>
-            <button id="clearResponseBtn" class="text-sm text-gray-500 hover:text-gray-700">
-              <i data-lucide="trash-2" class="h-4 w-4"></i>
+            <button id="uploadFilesBtn"
+              class="w-full px-4 py-2 bg-sky-500 hover:bg-sky-600 text-white rounded-md text-sm font-medium transition-colors">
+              Upload Files
             </button>
           </div>
-          <div id="responseContainer" class="response-container p-4 bg-gray-800 rounded-md font-mono text-xs text-green-400 whitespace-pre">
-            // API responses will appear here
+
+          <!-- Step 3: Process Book -->
+          <div id="processBookPanel" class="mb-6 hidden">
+            <h3 class="text-md font-medium mb-3 text-gray-700">Process Book</h3>
+            <p class="text-sm text-gray-500 mb-4">Process images with AI using
+              the provided prompt.</p>
+
+            <div class="grid grid-cols-2 gap-4 mb-4">
+              <div>
+                <label
+                  class="block text-sm font-medium text-gray-700 mb-1">Age</label>
+                <input id="promptAge" type="text" placeholder="25"
+                  class="w-full px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent" />
+              </div>
+              <div>
+                <label
+                  class="block text-sm font-medium text-gray-700 mb-1">Gender</label>
+                <select id="promptGender"
+                  class="w-full px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent">
+                  <option value="male">Male</option>
+                  <option value="female" selected>Female</option>
+                  <option value="non-binary">Non-binary</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4 mb-4">
+              <div>
+                <label
+                  class="block text-sm font-medium text-gray-700 mb-1">Race</label>
+                <input id="promptRace" type="text" placeholder="Asian"
+                  class="w-full px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent" />
+              </div>
+              <div>
+                <label
+                  class="block text-sm font-medium text-gray-700 mb-1">Expression</label>
+                <input id="promptExpression" type="text" placeholder="smiling"
+                  class="w-full px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent" />
+              </div>
+            </div>
+
+            <div class="mb-4">
+              <label
+                class="block text-sm font-medium text-gray-700 mb-1">Hairstyle</label>
+              <input id="promptHairstyle" type="text"
+                placeholder="long straight black hair"
+                class="w-full px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent" />
+            </div>
+
+            <div class="mb-4">
+              <label
+                class="block text-sm font-medium text-gray-700 mb-1">Clothing</label>
+              <input id="promptClothing" type="text"
+                placeholder="casual business attire"
+                class="w-full px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent" />
+            </div>
+
+            <div class="grid grid-cols-2 gap-4 mb-4">
+              <div>
+                <label
+                  class="block text-sm font-medium text-gray-700 mb-1">Background</label>
+                <input id="promptBackground" type="text"
+                  placeholder="neutral studio"
+                  class="w-full px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent" />
+              </div>
+              <div>
+                <label
+                  class="block text-sm font-medium text-gray-700 mb-1">Lighting</label>
+                <input id="promptLighting" type="text"
+                  placeholder="soft natural light"
+                  class="w-full px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent" />
+              </div>
+            </div>
+
+            <button id="processBookBtn"
+              class="w-full px-4 py-2 bg-sky-500 hover:bg-sky-600 text-white rounded-md text-sm font-medium transition-colors">
+              Process Book
+            </button>
+          </div>
+
+          <!-- Step 5: Check Status -->
+          <div id="checkStatusPanel" class="mb-6 hidden">
+            <h3 class="text-md font-medium mb-3 text-gray-700">Check Status</h3>
+            <p class="text-sm text-gray-500 mb-4">Check the processing status of
+              your request.</p>
+            <button id="checkStatusBtn"
+              class="w-full px-4 py-2 bg-sky-500 hover:bg-sky-600 text-white rounded-md text-sm font-medium transition-colors">
+              Check Status
+            </button>
+          </div>
+
+          <!-- Default Panel -->
+          <div id="defaultPanel">
+            <h3 class="text-md font-medium mb-3 text-gray-700">Welcome to
+              Pictoora API Playground</h3>
+            <p class="text-sm text-gray-500 mb-4">Click on any step in the
+              workflow diagram above to begin testing the API.</p>
+            <div class="p-4 bg-gray-50 rounded-md">
+              <div class="flex items-center space-x-2 text-gray-600">
+                <i data-lucide="info" class="h-5 w-5"></i>
+                <span class="text-sm">Enter your API key in the top right corner
+                  to get started.</span>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
 
-  <script>
+        <!-- Right Panel: Response & Results -->
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <h2 class="text-lg font-semibold mb-4 text-gray-800">Response &
+            Results</h2>
+
+          <!-- Session Info -->
+          <div id="sessionInfo" class="mb-4 p-4 bg-gray-50 rounded-md hidden">
+            <h3 class="text-md font-medium mb-2 text-gray-700">Session
+              Information</h3>
+            <div class="grid grid-cols-2 gap-2 text-sm">
+              <div class="font-medium">Init ID:</div>
+              <div id="sessionInitId" class="font-mono">-</div>
+              <div class="font-medium">Process ID:</div>
+              <div id="sessionProcessId" class="font-mono">-</div>
+              <div class="font-medium">Page ID:</div>
+              <div id="sessionPageId" class="font-mono">-</div>
+              <div class="font-medium">Status:</div>
+              <div id="sessionStatus">-</div>
+            </div>
+          </div>
+
+
+
+          <!-- API Response -->
+          <div>
+            <div class="flex items-center justify-between mb-2">
+              <h3 class="text-md font-medium text-gray-700">API Response</h3>
+              <button id="clearResponseBtn"
+                class="text-sm text-gray-500 hover:text-gray-700">
+                <i data-lucide="trash-2" class="h-4 w-4"></i>
+              </button>
+            </div>
+            <div id="responseContainer"
+              class="response-container p-4 bg-gray-800 rounded-md font-mono text-xs text-green-400 whitespace-pre">
+              // API responses will appear here
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+
+                <!-- Image Preview -->
+                <div id="imagePreview" class="mb-4 hidden">
+                  <h3 class="text-md font-medium mb-2 text-gray-700">Image
+                    Preview</h3>
+                  <div class="grid grid-cols-2 gap-4">
+                    <div>
+                      <p class="text-sm text-gray-500 mb-1">Source Image</p>
+                      <div id="sourceImageContainer"
+                        class="h-auto bg-gray-100 rounded-md flex items-center justify-center">
+                        <span class="text-sm text-gray-400">No image</span>
+                      </div>
+                    </div>
+                    <div>
+                      <p class="text-sm text-gray-500 mb-1">Processed Image</p>
+                      <div id="processedImageContainer"
+                        class="h-40 bg-gray-100 rounded-md flex items-center justify-center">
+                        <span class="text-sm text-gray-400">No image</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    </div>
+
+    <script>
   // Initialize Lucide icons
   lucide.createIcons();
   
@@ -382,6 +462,18 @@
     // Clear response
     $('#clearResponseBtn').click(function() {
       $('#responseContainer').html('// API responses will appear here');
+    });
+
+    // Image preview
+    $('.img-popup').click(function() {
+      const src = $(this).attr('src');
+      $('#imageModal img').attr('src', src);
+      $('#imageModal').show();
+    });
+
+    // Modal close
+    $('#imageModal').click(function() {
+      $('#imageModal').hide();
     });
     
     // Step click handlers
@@ -478,7 +570,7 @@
           sourceFileUrl = sourceResponse.data.file_url;
           
           // Show source image preview
-          $('#sourceImageContainer').html(`<img src="${sourceFileUrl}" class="h-full w-full object-contain" />`);
+          $('#sourceImageContainer').html(`<img src="${sourceFileUrl}" class="h-full w-full object-contain img-popup" />`);
           $('#imagePreview').removeClass('hidden');
           
           // If target file is selected, upload it too
@@ -687,7 +779,7 @@
         updateSessionInfo();
         
         if (processData.status === 'COMPLETED' && processData.url) {
-          $('#processedImageContainer').html(`<img src="${processData.url}" class="h-full w-full object-contain" />`);
+          $('#processedImageContainer').html(`<img src="${processData.url}" class="h-full w-full object-contain img-popup" />`);
           showNotification('Processing completed', 'success');
           setCompletedStep(4);
           setCompletedStep(5);
@@ -777,5 +869,5 @@
     clearInterval(processingTimer);
   }
 </script>
-</body>
+  </body>
 </html>
