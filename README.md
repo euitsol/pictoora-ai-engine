@@ -1,203 +1,292 @@
+# Pictoora API
 
-# Taleified AI Engine Documentation
+A FastAPI-based image processing API that handles image manipulation using OpenAI's DALL-E model. This project includes features like file upload, background processing, TTL-based caching, and structured logging.
 
-## Project Overview
+## Table of Contents
 
-Taleified AI Engine is a Python-based backend service designed to process and generate images for a book creation platform. The application provides APIs for uploading images and processing book pages with AI-generated content.
+- [Features](#features)
+- [Project Structure](#project-structure)
+- [Setup Instructions](#setup-instructions)
+  - [Prerequisites](#prerequisites)
+  - [Windows Setup](#windows-setup)
+  - [Mac/Linux Setup](#maclinux-setup)
+- [Configuration](#configuration)
+- [Running the Project](#running-the-project)
+- [How It Works](#how-it-works)
+- [API Endpoints](#api-endpoints)
+- [Status Codes](#status-codes)
+- [Validation Rules](#validation-rules)
+- [Cache System](#cache-system)
+
+## Features
+
+✨ **Core Features**
+
+- Health check system
+- Secure file upload with validation
+- Image processing with OpenAI GPT-Image-1 model
+- TTL-based caching with thread-safe operations
+- Structured logging with rotation
+- API key authentication middleware
+- Background task processing
+- Standardized response format
+- Custom status codes
+- CORS support
+- Static file serving
+- Process status tracking
+- Cache monitoring
 
 ## Project Structure
 
 ```
-taleified-ai-engine/
+pictoora/
 ├── app/
-│   ├── __init__.py
-│   ├── config/
-│   │   ├── __init__.py
-│   │   └── settings.py        # Application configuration
-│   ├── dependencies/
-│   │   ├── __init__.py
-│   │   ├── database.py       # Database connection handling
-│   │   └── dependencies.py   # FastAPI dependencies
-│   ├── models/
-│   │   ├── __init__.py
-│   │   └── schemas.py        # Pydantic models and schemas
-│   ├── routers/
-│   │   ├── __init__.py
-│   │   ├── images.py         # Image upload endpoints
-│   │   └── processing.py     # Book processing endpoints
-│   ├── services/
-│   │   ├── __init__.py
-│   │   ├── image_service.py  # Image handling logic
-│   │   └── processing_service.py  # Core processing logic
-│   ├── utils/
-│   │   ├── __init__.py
-│   │   ├── exceptions.py     # Custom exceptions
-│   │   └── helpers.py        # Helper functions
-│   └── main.py               # FastAPI application entry point
-├── views/
-│   └── home/
-│       └── index.html      # Basic web interface
-├── requirements.txt           # Python dependencies
-└── run.py                    # Application runner
+│   ├── api/
+│   │   └── endpoints/          # API endpoint handlers
+│   │       ├── health.py      # Health check endpoint
+│   │       ├── upload.py      # File upload endpoint
+│   │       ├── process.py     # Image processing endpoints
+│   │       └── cache.py       # Cache monitoring endpoint
+│   ├── core/                  # Core functionality
+│   │   ├── config.py         # Configuration settings
+│   │   ├── logger.py         # Logging setup
+│   │   └── cache.py         # TTL Cache implementation
+│   ├── middleware/           # Middleware components
+│   │   └── api_key.py       # API key authentication
+│   ├── schemas/             # Data models
+│   │   └── responses.py     # Response schemas
+│   └── main.py             # Main application entry
+├── storage/                # Storage directory
+│   └── uploads/           # Uploaded files location
+├── logs/                  # Application logs
+├── .env                   # Environment variables
+├── requirements.txt       # Project dependencies
+└── README.md             # Project documentation
 ```
 
-## Core Components
+## Setup Instructions
 
-### 1. API Endpoints
+### Prerequisites
 
-#### Image Processing
+- Python 3.8 or higher
+- OpenAI API key
+- Git
 
-- `POST /images/upload`
-  - Upload an image file
-  - Returns: URL of the uploaded image
+### Windows Setup
 
-#### Book Processing
-
-- `POST /process/book`
-
-  - Start processing a book with provided details
-  - Accepts: BookDetails schema
-  - Returns: ProcessResponse with process_id
-- `GET /process/status/{process_id}`
-
-  - Get status of a processing job
-  - Returns: Current process status and details
-
-### 2. Data Models
-
-#### ProcessStatus (Enum)
-
-- PENDING: Initial state
-- PROCESSING: Currently being processed
-- COMPLETED: Successfully finished
-- FAILED: Processing failed
-
-#### PageData
-
-- `id`: Page identifier (int)
-- `source_url`: Source image URL
-- `target_url`: Target image URL
-- `prompt`: Text prompt for AI processing
-- `style`: Styling information
-
-#### BookDetails
-
-- `user_id`: ID of the user
-- `book_id`: Unique book identifier
-- `pages`: List of PageData objects
-
-### 3. Services
-
-#### ImageService
-
-- Validates and saves uploaded images
-- Handles file storage and URL generation
-- Implements file format and size validation
-
-#### ProcessingService
-
-- Manages book processing workflow
-- Handles background tasks
-- Tracks process status
-- Validates input data
-
-### 4. Validation
-
-#### ProcessValidator
-
-- Validates book details structure
-- Checks required fields and formats
-- Validates page data and image URLs
-- Provides detailed error messages
-
-### 5. Error Handling
-
-Custom exceptions and error responses with:
-
-- Error type
-- Human-readable message
-- Error code
-- Additional details when applicable
-
-## Technical Stack
-
-- **Framework**: FastAPI
-- **Language**: Python 3.x
-- **Data Validation**: Pydantic
-- **File Handling**: Python standard library
-- **Asynchronous Processing**: FastAPI BackgroundTasks
-
-## Setup and Running
-
-### Step 1: Install Python
-
-1. Visit the [Python Downloads Page](https://www.python.org/downloads/)
-2. Download the latest Python version (3.8 or newer)
-3. Run the installer
-4. Check "Add Python to PATH" during installation
-5. Click "Install Now"
-6. Verify installation by opening Command Prompt (Windows) and typing:
-   ```bash
-   python --version
-   ```
-
-### Step 2: Download the Project
+1. Clone the repository:
 
 ```bash
-git clone https://github.com/euitsol/taleified-ai-engine.git
-cd taleified-ai-engine
+git clone https://github.com/yourusername/pictoora.git
+cd pictoora
 ```
 
-### Step 3: Set Up Virtual Environment
-
-Create and activate a virtual environment:
-
-On Windows:
+2. Create and activate virtual environment:
 
 ```bash
 python -m venv venv
-venv\Scripts\activate
+.\venv\Scripts\activate
 ```
 
-On macOS/Linux:
+3. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+### Mac/Linux Setup
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/pictoora.git
+cd pictoora
+```
+
+2. Create and activate virtual environment:
 
 ```bash
 python3 -m venv venv
 source venv/bin/activate
 ```
 
-### Step 4: Install Dependencies
+3. Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Step 5: Run the Application
+## Configuration
 
-```bash
-python run.py
+1. Create a `.env` file in the root directory:
+
+```env
+# App Configuration
+APP_NAME=Pictoora
+APP_URL=http://localhost:8000
+
+# API Authentication
+API_KEY=your_api_key_here
+
+# OpenAI Configuration
+OPENAI_API_KEY=your_openai_api_key
 ```
 
-### Step 6: Access the Application
+## Running the Project
 
-- API documentation: http://localhost:8000/docs
-- Interactive API docs: http://localhost:8000/redoc
-- Home page: http://localhost:8000
+1. Activate virtual environment (if not already activated):
 
-## Error Codes
+- Windows: `.\venv\Scripts\activate`
+- Mac/Linux: `source venv/bin/activate`
 
-### Validation Errors (1000-1999)
+2. Start the FastAPI server:
 
-- 1001: File size exceeds limit
-- 1002: Invalid file format
-- 1004: Process not found
+```bash
+uvicorn app.main:app --reload
+```
 
-### Book Processing Errors (2000-2999)
+3. Access the API:
 
-- 2001: At least one page is required
-- 2002: Invalid source URL format
-- 2003: Invalid target URL format
-- 2004: Invalid prompt length
-- 2005: Book ID is required
-- 2006: User ID is required
-- 2007: Invalid image URL
+- API: http://localhost:8000
+- Swagger Documentation: http://localhost:8000/docs
+- ReDoc Documentation: http://localhost:8000/redoc
+
+## How It Works
+
+1. **File Upload Process**:
+
+   - Client uploads image files through `/upload` endpoint
+   - System validates file type (png, jpg, jpeg)
+   - Files are stored in `storage/uploads` with unique names
+   - Returns file ID for future reference
+
+2. **Image Processing Workflow**:
+   ```
+   [Client]
+      │
+      ▼
+   [1. Initiate Process] (/initiate-process)
+      │
+      ▼
+   [2. Upload Files] (/upload)
+      │
+      ▼
+   [3. Process Book] (/process/book)
+      │
+      ▼
+   [4. Background Processing]
+      │
+      ▼
+   [5. Check Status] (/process/status)
+   ```
+
+## API Endpoints
+
+1. **Root**
+
+   - Path: `GET /api/v1/`
+   - Purpose: Welcome message
+   - Auth: Not required
+
+2. **Health Check**
+
+   - Path: `GET /api/v1/health`
+   - Purpose: System health monitoring
+   - Auth: Not required
+
+3. **File Upload**
+
+   - Path: `POST /api/v1/upload`
+   - Purpose: Upload image files
+   - Auth: Required (X-API-Key header)
+   - Returns: File path and URL
+
+4. **Process Initiation**
+
+   - Path: `POST /api/v1/initiate-process`
+   - Purpose: Start new processing session
+   - Auth: Required
+   - Returns: Unique init_id
+
+5. **Book Processing**
+
+   - Path: `POST /api/v1/process/book`
+   - Purpose: Process images with DALL-E
+   - Auth: Required
+   - Body: init_id, source_url, target_url, prompt
+   - Returns: Process status
+
+6. **Process Status**
+
+   - Path: `POST /api/v1/process/status`
+   - Purpose: Check processing status
+   - Auth: Required
+   - Returns: Current status and result URL
+
+7. **Cache Status**
+   - Path: `GET /api/v1/cache/status`
+   - Purpose: Monitor cache system
+   - Auth: Required
+   - Returns: Cache statistics and entries
+
+## Status Codes
+
+| Code | Endpoint          | Description             |
+| ---- | ----------------- | ----------------------- |
+| 1000 | /                 | Welcome message         |
+| 1001 | /                 | System error            |
+| 1000 | /health           | System healthy          |
+| 1001 | /health           | System unhealthy        |
+| 2000 | /upload           | Upload successful       |
+| 2001 | /upload           | Upload failed           |
+| 3000 | /initiate-process | Process initiated       |
+| 3001 | /initiate-process | Initiation failed       |
+| 4000 | /process/book     | Processing started      |
+| 4001 | /process/book     | Processing failed       |
+| 5000 | /process/status   | Status retrieved        |
+| 5001 | /process/status   | Status retrieval failed |
+| 6000 | /cache/status     | Cache status retrieved  |
+| 6001 | /cache/status     | Cache status failed     |
+
+## Validation Rules
+
+1. **File Upload**:
+
+   - Allowed extensions: png, jpg, jpeg
+   - Automatic unique filename generation
+   - File size: Limited by FastAPI default
+   - Proper file path handling with Path
+
+2. **API Authentication**:
+
+   - Header: X-API-Key
+   - Required for all endpoints except / and /health
+   - Configurable through .env file
+   - Middleware-based validation
+
+3. **Process Validation**:
+   - Valid init_id required for processing
+   - Source and target files must exist
+   - Valid OpenAI API key required
+   - Background task processing
+   - Status tracking with TTL cache
+
+## Cache System
+
+1. **TTL (Time-To-Live) Cache**:
+
+   - Default TTL: 1 hour (3600 seconds)
+   - Maximum cache size: 1000 items
+   - Thread-safe implementation
+   - Custom TTL support per item
+   - Automatic cleanup of expired items
+   - Memory usage monitoring
+   - Cache statistics endpoint
+
+2. **Cache Operations**:
+   - get/set operations with O(1) complexity
+   - Custom expiration time support
+   - Error handling and logging
+   - Status monitoring
+   - Memory-efficient storage
+   - No external service dependencies

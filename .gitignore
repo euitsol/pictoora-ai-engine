@@ -9,6 +9,8 @@ __pycache__/
 # Distribution / packaging
 .Python
 build/
+storage/
+logs/
 develop-eggs/
 dist/
 downloads/
@@ -172,4 +174,3 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
-/storage
