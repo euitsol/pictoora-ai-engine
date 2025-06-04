@@ -16,6 +16,7 @@ class Settings(BaseSettings):
     UPLOAD_DIR: str = "storage/uploads"
     APP_URL: str = os.getenv("APP_URL", "http://localhost:8000")
     LOG_LEVEL: str = os.getenv("LOG_LEVEL", "DEBUG")
+    BASE_DIR: str = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
     class Config:
         case_sensitive = True

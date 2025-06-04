@@ -29,3 +29,5 @@ tqdm
 typing_extensions
 uvicorn
 win32-setctime
+opencv-python 
+numpy 

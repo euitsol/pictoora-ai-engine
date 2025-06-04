@@ -11,6 +11,7 @@ from openai import OpenAI
 import base64
 from pathlib import Path
 import tempfile
+from ...core.masking import mask_child_face
 from PIL import Image
 
 logger = get_logger()
@@ -27,79 +28,24 @@ class ProcessStatusRequest(BaseModel):
     page_id: Optional[str] = None
 
 class PromptTemplate:
-    """A class to manage and render prompt templates with placeholders."""
+    """A class to manage and render prompt templates."""
     
     # Define the default template
     DEFAULT_TEMPLATE = """
-    PRECISE FACE SWAP: Replace the face in the source image with the face from the target image. 
-    Maintain the source image's:
-    - Head position and orientation
-    - Lighting conditions and shadows
-    - Skin tone and texture
-    - Background details
-    - Facial expression intensity
-
-    Seamlessly blend the face edges. Preserve all non-facial elements exactly. 
-    Ensure natural positioning of eyes, nose, and mouth. Avoid distortions.
-
-    The person in the source image will have the following characteristics:
-    {characteristics}
-    """
-    
-    # Define characteristics template with placeholders
-    CHARACTERISTICS_TEMPLATE = """
-    - Age: {age} years old
-    - Gender: {gender}
-    - Race: {race}
-    - Expression: {expression}
-    - Hairstyle: {hairstyle}
-    - Clothing: {clothing}
-    - Accessories: {accessories}
-    - Pose: {pose}
-    - Lighting: {lighting}
-    - Background: {background}
-    - Environment: {environment}
-    - Mood: {mood}
-    - Atmosphere: {atmosphere}
-    - Style: {style}
-    - Composition: {composition}
+    {prompt}
     """
     
     @classmethod
     def render(cls, prompt_data: Dict[str, Any]) -> str:
         """Render the prompt template with the provided data."""
-        # Default values for all placeholders
-        defaults = {
-            'age': 'unknown',
-            'gender': 'unknown',
-            'race': 'unknown',
-            'expression': 'unknown',
-            'hairstyle': 'unknown',
-            'clothing': 'unknown',
-            'accessories': 'unknown',
-            'pose': 'unknown',
-            'lighting': 'unknown',
-            'background': 'unknown',
-            'environment': 'unknown',
-            'mood': 'unknown',
-            'atmosphere': 'unknown',
-            'style': 'unknown',
-            'composition': 'unknown'
-        }
-        
-        # Update defaults with provided data
-        defaults.update({k: v for k, v in prompt_data.items() if v is not None})
-        
-        # Render characteristics
-        characteristics = cls.CHARACTERISTICS_TEMPLATE.format(**defaults)
+        custom_prompt = prompt_data.get('prompt', 'A professional headshot with natural lighting and neutral background')
         
         # Render full prompt
-        return cls.DEFAULT_TEMPLATE.format(characteristics=characteristics).strip()
+        return cls.DEFAULT_TEMPLATE.format(prompt=custom_prompt).strip()
 
 def convert_to_rgba(image_path: str, is_base64: bool = False) -> str:
     """Convert image to RGBA format and save to temporary file"""
     try:
-        # Extract filename from full URL if present
         if image_path.startswith(('http://', 'https://')):
             image_path = image_path.split('/uploads/')[-1]
             image_path = os.path.join(settings.UPLOAD_DIR, image_path)
@@ -126,6 +72,7 @@ def convert_to_rgba(image_path: str, is_base64: bool = False) -> str:
 async def process_image_background(process_id: str, page_id: str, source_url: str, target_url: str, prompt: Dict[str, Any]):
     source_temp = None
     target_temp = None
+    source_masked_temp = None
     
     try:
         # Generate the prompt using the template
@@ -142,22 +89,29 @@ async def process_image_background(process_id: str, page_id: str, source_url: st
         source_temp = convert_to_rgba(source_url)
         target_temp = convert_to_rgba(target_url)
         
+        # Mask the source image
+        source_masked_temp = mask_child_face(source_temp)
+        logger.info(f"Masked image: {source_masked_temp}")
+        
         # Process the image
         with open(source_temp, "rb") as src_file, \
+             open(source_masked_temp, "rb") as masked_file, \
              open(target_temp, "rb") as tgt_file:
             
             response = client.images.edit(
                 model="gpt-image-1",
-                image=[src_file, tgt_file],
+                image=[src_file, masked_file, tgt_file],
                 prompt=actual_prompt,
                 size="1024x1024",
+                quality="high",
                 n=1
             )
             
             # Save the result
             image_data = base64.b64decode(response.data[0].b64_json)
-            new_filename = f"p_{page_id}_{uuid.uuid4()}_result.png"
+            new_filename = f"p_{page_id}_{uuid.uuid4()}_result.webp"
             output_path = os.path.join(settings.UPLOAD_DIR, new_filename)
+            
             
             with open(output_path, "wb") as f:
                 f.write(image_data)
@@ -174,10 +128,9 @@ async def process_image_background(process_id: str, page_id: str, source_url: st
             cache.set(process_id, process_data, expire=3600)
             
         # Clean up temporary files
-        if os.path.exists(source_temp):
-            os.unlink(source_temp)
-        if os.path.exists(target_temp):
-            os.unlink(target_temp)
+        for temp_file in [source_temp, target_temp, source_masked_temp]:
+            if temp_file and os.path.exists(temp_file):
+                os.unlink(temp_file)
             
     except Exception as e:
         logger.error(f"Image processing failed: {str(e)}")
@@ -186,6 +139,11 @@ async def process_image_background(process_id: str, page_id: str, source_url: st
             process_data = {}
         process_data[page_id] = {"status": "FAILED", "url": None}
         cache.set(process_id, process_data, expire=3600)  # Reset TTL on failure
+        
+        # Clean up temporary files on error
+        for temp_file in [source_temp, target_temp, source_masked_temp]:
+            if temp_file and os.path.exists(temp_file):
+                os.unlink(temp_file)
 
 @router.post("/initiate-process", response_model=InitiateProcessResponse)
 async def initiate_process():

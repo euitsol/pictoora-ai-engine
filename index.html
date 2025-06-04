@@ -222,62 +222,12 @@
         <!-- Step 3: Process Book -->
         <div id="processBookPanel" class="mb-6 hidden">
           <h3 class="text-md font-medium mb-3 text-gray-700">Process Book</h3>
-          <p class="text-sm text-gray-500 mb-4">Process images with AI using
-            the provided prompt.</p>
-
-          <div class="grid grid-cols-2 gap-4 mb-4">
-            <div>
-              <label class="block text-sm font-medium text-gray-700 mb-1">Age</label>
-              <input id="promptAge" type="text" placeholder="25"
-                class="w-full px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent" />
-            </div>
-            <div>
-              <label class="block text-sm font-medium text-gray-700 mb-1">Gender</label>
-              <select id="promptGender"
-                class="w-full px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent">
-                <option value="male">Male</option>
-                <option value="female" selected>Female</option>
-                <option value="non-binary">Non-binary</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="grid grid-cols-2 gap-4 mb-4">
-            <div>
-              <label class="block text-sm font-medium text-gray-700 mb-1">Race</label>
-              <input id="promptRace" type="text" placeholder="Asian"
-                class="w-full px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent" />
-            </div>
-            <div>
-              <label class="block text-sm font-medium text-gray-700 mb-1">Expression</label>
-              <input id="promptExpression" type="text" placeholder="smiling"
-                class="w-full px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent" />
-            </div>
-          </div>
+          <p class="text-sm text-gray-500 mb-4">Process images with AI using the provided prompt.</p>
 
           <div class="mb-4">
-            <label class="block text-sm font-medium text-gray-700 mb-1">Hairstyle</label>
-            <input id="promptHairstyle" type="text" placeholder="long straight black hair"
-              class="w-full px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent" />
-          </div>
-
-          <div class="mb-4">
-            <label class="block text-sm font-medium text-gray-700 mb-1">Clothing</label>
-            <input id="promptClothing" type="text" placeholder="casual business attire"
-              class="w-full px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent" />
-          </div>
-
-          <div class="grid grid-cols-2 gap-4 mb-4">
-            <div>
-              <label class="block text-sm font-medium text-gray-700 mb-1">Background</label>
-              <input id="promptBackground" type="text" placeholder="neutral studio"
-                class="w-full px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent" />
-            </div>
-            <div>
-              <label class="block text-sm font-medium text-gray-700 mb-1">Lighting</label>
-              <input id="promptLighting" type="text" placeholder="soft natural light"
-                class="w-full px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent" />
-            </div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Custom Prompt</label>
+            <textarea id="fullPrompt" rows="8" placeholder="Enter your detailed prompt here..."
+              class="w-full px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent"></textarea>
           </div>
 
           <button id="processBookBtn"
@@ -382,7 +332,8 @@
     // Global Configuration
     const CONFIG = {
       // Base API URL - update this to change all endpoints at once
-      baseUrl: 'http://195.110.58.191:8000/api/v1',
+      //baseUrl: 'http://195.110.58.191:8000/api/v1',
+      baseUrl: 'http://localhost:8000/api/v1',
 
       // API Endpoints
       endpoints: {
@@ -401,7 +352,25 @@
 
       // File settings
       allowedFileTypes: '.png,.jpg,.jpeg',
-      maxFileSize: 10 * 1024 * 1024 // 10MB
+      maxFileSize: 10 * 1024 * 1024, // 10MB
+
+      //Default Promt
+      prompt: `
+You are an advanced image editing AI specializing in face swapping while preserving scene context. Your task is to swap the face from the **target image** (a portrait of a child) into the **source image** (a detailed illustrated book image containing various items and characters).
+
+Instructions:
+- Seamlessly blend the child's face from the target image into the appropriate character in the source image.
+- Maintain all other visual elements of the source image (e.g., background, objects, colors, composition) without alteration.
+- Ensure lighting, shadows, and color tones of the swapped face match the source image for natural integration.
+- Keep facial orientation and proportions accurate to the character in the source image.
+
+Input:
+- Source image: A detailed illustration from a book.
+- Target image: A clear, front-facing photo of a child.
+
+Output format:
+- A single composite image with the child’s face swapped onto the selected character, maintaining the source image’s original style and context.
+      `
     };
 
     // Global variables
@@ -417,6 +386,9 @@
     $(document).ready(function () {
       // Set API key from localStorage if available
       $('#apiKey').val(apiKey);
+
+      //Set default prompt
+      $('#fullPrompt').val(CONFIG.prompt);
 
       // Save API key
       $('#saveApiKey').click(function () {
@@ -602,29 +574,13 @@
 
         setButtonLoading($btn, true);
 
-        const promptData = {
-          age: $('#promptAge').val() || '25',
-          gender: $('#promptGender').val() || 'female',
-          race: $('#promptRace').val() || 'Asian',
-          expression: $('#promptExpression').val() || 'smiling',
-          hairstyle: $('#promptHairstyle').val() || 'long straight black hair',
-          clothing: $('#promptClothing').val() || 'casual business attire',
-          accessories: 'minimal jewelry',
-          pose: 'professional headshot',
-          lighting: $('#promptLighting').val() || 'soft natural light',
-          background: $('#promptBackground').val() || 'neutral studio',
-          environment: 'indoor studio',
-          mood: 'professional',
-          atmosphere: 'warm and welcoming',
-          style: 'modern corporate',
-          composition: 'centered headshot'
-        };
-
         const requestData = {
           init_id: initId,
           source_url: sourceFileUrl,
           target_url: targetFileUrl || null,
-          prompt: promptData
+          prompt: {
+            prompt: $('#fullPrompt').val() || 'A professional headshot with natural lighting and neutral background'
+          }
         };
 
         makeApiRequest('POST', CONFIG.endpoints.processBook, requestData, function (response) {
