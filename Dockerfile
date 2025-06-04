@@ -9,10 +9,11 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
     PYTHONPATH=/app
 
-# Install system dependencies including libgl1 for OpenCV
+# Install system dependencies including libgl1 and libglib2.0-0 for OpenCV
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     libgl1 \
+    libglib2.0-0 \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
