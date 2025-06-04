@@ -159,6 +159,7 @@ uvicorn app.main:app --reload
    - System validates file type (png, jpg, jpeg)
    - Files are stored in `storage/uploads` with unique names
    - Returns file ID for future reference
+
 2. **Image Processing Workflow**:
 
    ```
@@ -187,23 +188,27 @@ uvicorn app.main:app --reload
    - Path: `GET /api/v1/`
    - Purpose: Welcome message
    - Auth: Not required
+
 2. **Health Check**
 
    - Path: `GET /api/v1/health`
    - Purpose: System health monitoring
    - Auth: Not required
+
 3. **File Upload**
 
    - Path: `POST /api/v1/upload`
    - Purpose: Upload image files
    - Auth: Required (X-API-Key header)
    - Returns: File path and URL
+
 4. **Process Initiation**
 
    - Path: `POST /api/v1/initiate-process`
    - Purpose: Start new processing session
    - Auth: Required
    - Returns: Unique init_id
+
 5. **Book Processing**
 
    - Path: `POST /api/v1/process/book`
@@ -211,12 +216,14 @@ uvicorn app.main:app --reload
    - Auth: Required
    - Body: init_id, source_url, target_url, prompt
    - Returns: Process status
+
 6. **Process Status**
 
    - Path: `POST /api/v1/process/status`
    - Purpose: Check processing status
    - Auth: Required
    - Returns: Current status and result URL
+
 7. **Cache Status**
 
    - Path: `GET /api/v1/cache/status`
@@ -224,24 +231,34 @@ uvicorn app.main:app --reload
    - Auth: Required
    - Returns: Cache statistics and entries
 
+8. **SEO Keywords**
+
+   - Path: `POST /api/v1/generate-keywords`
+   - Purpose: Generate SEO keywords from description
+   - Auth: Required
+   - Body: description (text)
+   - Returns: List of optimized keywords
+
 ## Status Codes
 
-| Code | Endpoint          | Description             |
-| ---- | ----------------- | ----------------------- |
-| 1000 | /                 | Welcome message         |
-| 1001 | /                 | System error            |
-| 1000 | /health           | System healthy          |
-| 1001 | /health           | System unhealthy        |
-| 2000 | /upload           | Upload successful       |
-| 2001 | /upload           | Upload failed           |
-| 3000 | /initiate-process | Process initiated       |
-| 3001 | /initiate-process | Initiation failed       |
-| 4000 | /process/book     | Processing started      |
-| 4001 | /process/book     | Processing failed       |
-| 5000 | /process/status   | Status retrieved        |
-| 5001 | /process/status   | Status retrieval failed |
-| 6000 | /cache/status     | Cache status retrieved  |
-| 6001 | /cache/status     | Cache status failed     |
+| Code | Endpoint           | Description                |
+| ---- | ------------------ | -------------------------- |
+| 1000 | /                  | Welcome message            |
+| 1001 | /                  | System error               |
+| 1000 | /health            | System healthy             |
+| 1001 | /health            | System unhealthy           |
+| 2000 | /upload            | Upload successful          |
+| 2001 | /upload            | Upload failed              |
+| 3000 | /initiate-process  | Process initiated          |
+| 3001 | /initiate-process  | Initiation failed          |
+| 4000 | /process/book      | Processing started         |
+| 4001 | /process/book      | Processing failed          |
+| 5000 | /process/status    | Status retrieved           |
+| 5001 | /process/status    | Status retrieval failed    |
+| 6000 | /cache/status      | Cache status retrieved     |
+| 6001 | /cache/status      | Cache status failed        |
+| 7000 | /generate-keywords | Keywords generated         |
+| 7001 | /generate-keywords | Keywords generation failed |
 
 ## Validation Rules
 
@@ -251,12 +268,14 @@ uvicorn app.main:app --reload
    - Automatic unique filename generation
    - File size: Limited by FastAPI default
    - Proper file path handling with Path
+
 2. **API Authentication**:
 
    - Header: X-API-Key
    - Required for all endpoints except / and /health
    - Configurable through .env file
    - Middleware-based validation
+
 3. **Process Validation**:
 
    - Valid init_id required for processing
@@ -276,6 +295,7 @@ uvicorn app.main:app --reload
    - Automatic cleanup of expired items
    - Memory usage monitoring
    - Cache statistics endpoint
+
 2. **Cache Operations**:
 
    - get/set operations with O(1) complexity

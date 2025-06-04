@@ -4,7 +4,7 @@ from fastapi.staticfiles import StaticFiles
 from .core.config import settings
 from .core.logger import get_logger
 from .middleware.api_key import verify_api_key
-from .api.endpoints import health, upload, process, cache
+from .api.endpoints import health, upload, process, cache, seo
 import os
 from pathlib import Path
 
@@ -49,7 +49,8 @@ app.include_router(health.router, prefix=settings.API_V1_STR)
 app.include_router(upload.router, prefix=settings.API_V1_STR)
 app.include_router(process.router, prefix=settings.API_V1_STR)
 app.include_router(cache.router, prefix=settings.API_V1_STR)
-
+app.include_router(seo.router, prefix=settings.API_V1_STR)
+ 
 @app.on_event("startup")
 async def startup_event():
     logger.info("Application starting up...")
