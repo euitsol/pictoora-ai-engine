@@ -230,6 +230,36 @@
               class="w-full px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent"></textarea>
           </div>
 
+          <div class="mb-4">
+            <label class="block text-sm font-medium text-gray-700 mb-1">Select Style</label>
+            <div class="grid grid-cols-1 gap-3">
+              <label class="flex items-center p-3 border rounded-lg cursor-pointer hover:bg-gray-50">
+                <input type="radio" name="style" class="style-radio h-4 w-4 text-sky-500" value="hat-style"
+                  data-prompt="Style: Add a large orange/yellow sun hat into the head blending into the image." checked>
+                <div class="ml-3 flex items-center flex-1">
+                  <div class="flex-1">
+                    <span class="block text-sm font-medium text-gray-700">Summer Hat Style</span>
+                    <span class="block text-sm text-gray-500">Cheerful character with a large sun hat</span>
+                  </div>
+                  <img src="" alt="Hat Style Reference" class="w-16 h-16 object-contain rounded-md ml-4" id="hatStyle">
+                </div>
+              </label>
+
+              <label class="flex items-center p-3 border rounded-lg cursor-pointer hover:bg-gray-50">
+                <input type="radio" name="style" class="style-radio h-4 w-4 text-sky-500" value="sunglasses-style"
+                  data-prompt="Style: Add a large yellow-framed sunglasses to the face blending into the image">
+                <div class="ml-3 flex items-center flex-1">
+                  <div class="flex-1">
+                    <span class="block text-sm font-medium text-gray-700">Cool Sunglasses Style</span>
+                    <span class="block text-sm text-gray-500">Modern character with stylish yellow sunglasses</span>
+                  </div>
+                  <img src="" alt="Sunglasses Style Reference" class="w-16 h-16 object-contain rounded-md ml-4"
+                    id="sunglassesStyle">
+                </div>
+              </label>
+            </div>
+          </div>
+
           <button id="processBookBtn"
             class="w-full px-4 py-2 bg-sky-500 hover:bg-sky-600 text-white rounded-md text-sm font-medium transition-colors">
             Process Book
@@ -333,7 +363,9 @@
     const CONFIG = {
       // Base API URL - update this to change all endpoints at once
       //baseUrl: 'http://195.110.58.191:8000/api/v1',
+      root: 'http://localhost:8000',
       baseUrl: 'http://localhost:8000/api/v1',
+
 
       // API Endpoints
       endpoints: {
@@ -356,22 +388,43 @@
 
       //Default Promt
       prompt: `
-You are an advanced image editing AI specializing in face swapping while preserving scene context. Your task is to swap the face from the **target image** (a portrait of a child) into the **source image** (a detailed illustrated book image containing various items and characters).
 
-Instructions:
-- Seamlessly blend the child's face from the target image into the appropriate character in the source image.
-- Maintain all other visual elements of the source image (e.g., background, objects, colors, composition) without alteration.
-- Ensure lighting, shadows, and color tones of the swapped face match the source image for natural integration.
-- Keep facial orientation and proportions accurate to the character in the source image.
+# Face Swapping Task: Insert Target Face into Masked Source Scene
 
-Input:
-- Source image: A detailed illustration from a book.
-- Target image: A clear, front-facing photo of a child.
+You are an advanced image editing AI specializing in realistic face swapping while preserving scene context. Your task is to insert the child’s face from the **target image** into the **masked area** of the **source image**, based on the masked version provided.
 
-Output format:
-- A single composite image with the child’s face swapped onto the selected character, maintaining the source image’s original style and context.
-      `
+---
+
+## Input:
+- **Source Image**: A detailed illustrated scene from a book.
+- **Masked Source Image**: The same scene with one character's face blurred or marked — this indicates where the target face should be inserted.
+- **Target Image**: A clear, front-facing portrait of a child.
+
+---
+
+## Instructions:
+
+1. **Face Swapping Logic:**
+   - Use the **masked source image** to identify the exact area/character in the **source image** where the face needs to be replaced.
+   - Swap in the **target face** onto that area in the **original (unmasked) source image**.
+
+2. **Visual Consistency:**
+   - Preserve all original elements in the source image (background, objects, artistic style, composition).
+   - Match color tones to seamlessly blend the new face into the scene.
+
+3. **Orientation & Proportions:**
+   - Align facial angle and size with the original character in the source image.
+   - Ensure the new face feels naturally integrated into the original illustration.
+
+---
+
+##Output:
+- A single **composite image** with the child’s face accurately and naturally inserted into the **unmasked source image**, fully replacing the blurred face from the masked version while preserving the original artistic context.
+
+      `,
     };
+    const hatStyleImageUrl = CONFIG.root + "/storage/frontend/hat.png";
+    const sunglassesStyleImageUrl = CONFIG.root + "/storage/frontend/sunglass.png";
 
     // Global variables
     let apiKey = localStorage.getItem('pictooraApiKey') || '';
@@ -389,6 +442,10 @@ Output format:
 
       //Set default prompt
       $('#fullPrompt').val(CONFIG.prompt);
+
+      //Set default style image
+      $('#hatStyle').attr('src', hatStyleImageUrl);
+      $('#sunglassesStyle').attr('src', sunglassesStyleImageUrl);
 
       // Save API key
       $('#saveApiKey').click(function () {
@@ -579,7 +636,7 @@ Output format:
           source_url: sourceFileUrl,
           target_url: targetFileUrl || null,
           prompt: {
-            prompt: $('#fullPrompt').val() || 'A professional headshot with natural lighting and neutral background'
+            prompt: $('#fullPrompt').val() + $('input[name="style"]:checked').attr('data-prompt'),
           }
         };
 
