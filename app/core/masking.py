@@ -44,4 +44,15 @@ def mask_child_face(input_path):
     temp_file = tempfile.NamedTemporaryFile(suffix=".png", delete=False)
     cv2.imwrite(temp_file.name, image)
     
+    output_dir = Path(base_dir) / "storage" / "uploads"
+    output_dir.mkdir(parents=True, exist_ok=True)
+    
+    output_path = output_dir / "mask.png"
+    
+    # Save the masked image using direct file writing
+    with open(output_path, "wb") as buffer:
+        # Encode the image to png format
+        _, img_encoded = cv2.imencode('.png', image)
+        buffer.write(img_encoded.tobytes())
+    
     return temp_file.name

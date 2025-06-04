@@ -388,7 +388,6 @@
 
       //Default Promt
       prompt: `
-
 # Face Swapping Task: Insert Target Face into Masked Source Scene
 
 You are an advanced image editing AI specializing in realistic face swapping while preserving scene context. Your task is to insert the child’s face from the **target image** into the **masked area** of the **source image**, based on the masked version provided.
@@ -416,11 +415,12 @@ You are an advanced image editing AI specializing in realistic face swapping whi
    - Align facial angle and size with the original character in the source image.
    - Ensure the new face feels naturally integrated into the original illustration.
 
+
+
 ---
 
 ##Output:
 - A single **composite image** with the child’s face accurately and naturally inserted into the **unmasked source image**, fully replacing the blurred face from the masked version while preserving the original artistic context.
-
       `,
     };
     const hatStyleImageUrl = CONFIG.root + "/image/hat.png";
@@ -631,12 +631,22 @@ You are an advanced image editing AI specializing in realistic face swapping whi
 
         setButtonLoading($btn, true);
 
+        const fullPromptText = $('#fullPrompt').val();
+        const stylePrompt = $('input[name="style"]:checked').attr('data-prompt') || '';
+
+        let modifiedPrompt;
+        if (fullPromptText.includes('##Output:')) {
+          modifiedPrompt = fullPromptText.replace('##Output:', stylePrompt + '##Output:');
+        } else {
+          modifiedPrompt = fullPromptText + stylePrompt;
+        }
+
         const requestData = {
           init_id: initId,
           source_url: sourceFileUrl,
           target_url: targetFileUrl || null,
           prompt: {
-            prompt: $('#fullPrompt').val() + $('input[name="style"]:checked').attr('data-prompt'),
+            prompt: modifiedPrompt,
           }
         };
 
