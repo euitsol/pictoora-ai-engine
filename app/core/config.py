@@ -12,6 +12,8 @@ class Settings(BaseSettings):
     PROJECT_NAME: str = APP_NAME+"API"
     VERSION: str = "1.0.0"
     API_KEY: Optional[str] = os.getenv("API_KEY")
+    SEGMIND_API_KEY: Optional[str] = os.getenv("SEGMIND_API_KEY")
+    SEGMIND_API_URL: str = "https://api.segmind.com/v1/faceswap-comic"
     OPENAI_API_KEY: Optional[str] = os.getenv("OPENAI_API_KEY")
     UPLOAD_DIR: str = "storage/uploads"
     APP_URL: str = os.getenv("APP_URL", "http://localhost:8000")

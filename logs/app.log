@@ -1,1007 +1,345 @@
-2025-05-30 04:03:22 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 04:03:22 | INFO     | app.main:startup_event:38 - Application starting up...
-2025-05-30 04:03:42 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:04:04 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:04:04 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:08:20 | INFO     | app.main:shutdown_event:42 - Application shutting down...
-2025-05-30 04:08:22 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 04:08:23 | INFO     | app.main:startup_event:39 - Application starting up...
-2025-05-30 04:12:06 | INFO     | app.main:shutdown_event:43 - Application shutting down...
-2025-05-30 04:12:08 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 04:12:08 | INFO     | app.main:startup_event:39 - Application starting up...
-2025-05-30 04:12:18 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:12:18 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:12:24 | INFO     | app.main:shutdown_event:43 - Application shutting down...
-2025-05-30 04:12:41 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 04:12:42 | INFO     | app.main:startup_event:39 - Application starting up...
-2025-05-30 04:12:52 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:12:52 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:15:08 | INFO     | app.main:shutdown_event:43 - Application shutting down...
-2025-05-30 04:15:09 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 04:15:10 | INFO     | app.main:startup_event:39 - Application starting up...
-2025-05-30 04:15:36 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:15:36 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:15:41 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:15:41 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:15:41 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:15:47 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:15:47 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:15:53 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:15:54 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:16:02 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:16:13 | INFO     | app.api.endpoints.health:health_check:39 - Health check performed successfully
-2025-05-30 04:16:29 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:16:29 | INFO     | app.api.endpoints.upload:upload_file:45 - File uploaded successfully: a9342d45-b0f1-4085-9b36-ce8d8abf8b58.jpeg
-2025-05-30 04:17:31 | INFO     | app.main:shutdown_event:43 - Application shutting down...
-2025-05-30 04:17:33 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 04:17:33 | INFO     | app.main:startup_event:39 - Application starting up...
-2025-05-30 04:17:41 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:17:41 | INFO     | app.api.endpoints.upload:upload_file:45 - File uploaded successfully: storage/uploads\913b1d18-818d-4649-8dd1-9cd80df35273.jpeg
-2025-05-30 04:22:00 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:22:00 | INFO     | app.main:shutdown_event:43 - Application shutting down...
-2025-05-30 04:22:01 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 04:22:02 | INFO     | app.main:startup_event:43 - Application starting up...
-2025-05-30 04:22:02 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:22:11 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:22:11 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:22:30 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:22:30 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:22:33 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:22:33 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:22:39 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:22:39 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:22:46 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:22:53 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:22:53 | INFO     | app.api.endpoints.health:health_check:39 - Health check performed successfully
-2025-05-30 04:23:10 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:23:10 | INFO     | app.api.endpoints.upload:upload_file:52 - File uploaded successfully: storage\uploads\bcf33d6b-2b87-42d2-83ae-4766db6a7125.jpeg
-2025-05-30 04:23:10 | ERROR    | app.api.endpoints.upload:upload_file:63 - File upload failed: 1 validation error for UploadResponse
-data
-  Input should be a valid string [type=string_type, input_value={'file_path': 'storage/up...83ae-4766db6a7125.jpeg'}, input_type=dict]
-    For further information visit https://errors.pydantic.dev/2.6/v/string_type
-2025-05-30 04:27:00 | INFO     | app.main:shutdown_event:47 - Application shutting down...
-2025-05-30 04:27:02 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 04:27:03 | INFO     | app.main:startup_event:43 - Application starting up...
-2025-05-30 04:28:00 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:28:00 | INFO     | app.api.endpoints.upload:upload_file:52 - File uploaded successfully: storage\uploads\03d2edda-d0be-4416-b676-846f7a42dec4.jpeg
-2025-05-30 04:28:08 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:28:08 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:29:30 | INFO     | app.main:shutdown_event:47 - Application shutting down...
-2025-05-30 04:29:32 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 04:29:33 | INFO     | app.main:startup_event:53 - Application starting up...
-2025-05-30 04:29:41 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:29:42 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:29:43 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:29:43 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:29:43 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:29:43 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:29:43 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:29:44 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:29:44 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:30:04 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 04:30:05 | INFO     | app.main:startup_event:53 - Application starting up...
-2025-05-30 04:30:09 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:31:44 | INFO     | app.main:shutdown_event:57 - Application shutting down...
-2025-05-30 04:31:45 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 04:31:46 | INFO     | app.main:startup_event:55 - Application starting up...
-2025-05-30 04:31:51 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:31:53 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:32:07 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:34:58 | INFO     | app.main:shutdown_event:59 - Application shutting down...
-2025-05-30 04:35:00 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 04:35:00 | INFO     | app.main:startup_event:55 - Application starting up...
-2025-05-30 04:35:58 | INFO     | app.main:shutdown_event:59 - Application shutting down...
-2025-05-30 04:36:00 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 04:36:01 | INFO     | app.main:startup_event:55 - Application starting up...
-2025-05-30 04:36:31 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:36:31 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\eff56342-2035-40bc-9135-fb17718bb7b4.jpeg
-2025-05-30 04:36:50 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:38:27 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:38:27 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\bb60cb3f-da6c-4851-b66b-c25577b72ed8.jpeg
-2025-05-30 04:38:49 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:38:49 | INFO     | app.api.endpoints.process:initiate_process:72 - Process initiated with ID: 1df4d9be-d9f1-4050-934f-c026772fac7f
-2025-05-30 04:39:51 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:39:51 | ERROR    | app.api.endpoints.process:process_book:125 - Book processing failed: 400: Invalid init_id
-2025-05-30 04:40:59 | INFO     | app.main:shutdown_event:59 - Application shutting down...
-2025-05-30 04:41:01 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 04:41:01 | INFO     | app.main:startup_event:56 - Application starting up...
-2025-05-30 04:42:27 | INFO     | app.main:shutdown_event:60 - Application shutting down...
-2025-05-30 04:42:28 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 04:42:29 | INFO     | app.main:startup_event:56 - Application starting up...
-2025-05-30 04:42:36 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 04:42:37 | INFO     | app.main:startup_event:56 - Application starting up...
-2025-05-30 04:42:41 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:42:42 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:42:51 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:42:51 | INFO     | app.api.endpoints.cache:get_cache_status:39 - Cache status retrieved successfully
-2025-05-30 04:43:02 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:43:02 | INFO     | app.api.endpoints.process:initiate_process:72 - Process initiated with ID: ce698b8f-d143-40a9-b4ad-e2bfc4b34f40
-2025-05-30 04:43:08 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:43:08 | WARNING  | app.api.endpoints.cache:get_cache_status:36 - Error getting cache entry ce698b8f-d143-40a9-b4ad-e2bfc4b34f40: _TimedCache._Timer.__call__() takes 1 positional argument but 2 were given
-2025-05-30 04:43:08 | INFO     | app.api.endpoints.cache:get_cache_status:39 - Cache status retrieved successfully
-2025-05-30 04:43:10 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:43:11 | WARNING  | app.api.endpoints.cache:get_cache_status:36 - Error getting cache entry ce698b8f-d143-40a9-b4ad-e2bfc4b34f40: _TimedCache._Timer.__call__() takes 1 positional argument but 2 were given
-2025-05-30 04:43:11 | INFO     | app.api.endpoints.cache:get_cache_status:39 - Cache status retrieved successfully
-2025-05-30 04:43:11 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:43:11 | WARNING  | app.api.endpoints.cache:get_cache_status:36 - Error getting cache entry ce698b8f-d143-40a9-b4ad-e2bfc4b34f40: _TimedCache._Timer.__call__() takes 1 positional argument but 2 were given
-2025-05-30 04:43:11 | INFO     | app.api.endpoints.cache:get_cache_status:39 - Cache status retrieved successfully
-2025-05-30 04:45:04 | INFO     | app.main:shutdown_event:60 - Application shutting down...
-2025-05-30 04:45:06 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 04:45:07 | INFO     | app.main:startup_event:56 - Application starting up...
-2025-05-30 04:47:27 | INFO     | app.main:shutdown_event:60 - Application shutting down...
-2025-05-30 04:47:28 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 04:47:29 | INFO     | app.main:startup_event:56 - Application starting up...
-2025-05-30 04:47:49 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:47:49 | INFO     | app.api.endpoints.process:initiate_process:74 - Process initiated with ID: 6c64dee1-c12a-41e8-9e4e-5491cb865777
-2025-05-30 04:47:49 | ERROR    | app.api.endpoints.process:initiate_process:81 - Process initiation failed: 1 validation error for InitiateProcessResponse
-data
-  Input should be a valid string [type=string_type, input_value={}, input_type=dict]
-    For further information visit https://errors.pydantic.dev/2.6/v/string_type
-2025-05-30 04:50:17 | INFO     | app.main:shutdown_event:60 - Application shutting down...
-2025-05-30 04:50:19 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 04:50:19 | INFO     | app.main:startup_event:56 - Application starting up...
-2025-05-30 04:50:28 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:50:28 | INFO     | app.api.endpoints.process:initiate_process:74 - Process initiated with ID: 3f818e89-d040-49d2-a22f-2c89c570020c
-2025-05-30 04:50:28 | ERROR    | app.api.endpoints.process:initiate_process:81 - Process initiation failed: 1 validation error for InitiateProcessResponse
-data
-  Input should be a valid string [type=string_type, input_value={}, input_type=dict]
-    For further information visit https://errors.pydantic.dev/2.6/v/string_type
-2025-05-30 04:52:18 | INFO     | app.main:shutdown_event:60 - Application shutting down...
-2025-05-30 04:52:19 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 04:52:20 | INFO     | app.main:startup_event:56 - Application starting up...
-2025-05-30 04:52:21 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 04:52:22 | INFO     | app.main:startup_event:56 - Application starting up...
-2025-05-30 04:52:23 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:52:23 | INFO     | app.api.endpoints.process:initiate_process:73 - Process initiated with ID: 655b1efa-81ad-4bc5-9a21-e02ede5b2a66
-2025-05-30 04:52:33 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:52:33 | WARNING  | app.api.endpoints.cache:get_cache_status:36 - Error getting cache entry 655b1efa-81ad-4bc5-9a21-e02ede5b2a66: _TimedCache._Timer.__call__() takes 1 positional argument but 2 were given
-2025-05-30 04:52:33 | INFO     | app.api.endpoints.cache:get_cache_status:39 - Cache status retrieved successfully
-2025-05-30 04:52:40 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:52:40 | WARNING  | app.api.endpoints.cache:get_cache_status:36 - Error getting cache entry 655b1efa-81ad-4bc5-9a21-e02ede5b2a66: _TimedCache._Timer.__call__() takes 1 positional argument but 2 were given
-2025-05-30 04:52:40 | INFO     | app.api.endpoints.cache:get_cache_status:39 - Cache status retrieved successfully
-2025-05-30 04:52:42 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:52:42 | INFO     | app.api.endpoints.process:initiate_process:73 - Process initiated with ID: 7fde2646-107f-4cc0-8fb2-116e27409954
-2025-05-30 04:52:48 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:52:48 | WARNING  | app.api.endpoints.cache:get_cache_status:36 - Error getting cache entry 655b1efa-81ad-4bc5-9a21-e02ede5b2a66: _TimedCache._Timer.__call__() takes 1 positional argument but 2 were given
-2025-05-30 04:52:48 | WARNING  | app.api.endpoints.cache:get_cache_status:36 - Error getting cache entry 7fde2646-107f-4cc0-8fb2-116e27409954: _TimedCache._Timer.__call__() takes 1 positional argument but 2 were given
-2025-05-30 04:52:48 | INFO     | app.api.endpoints.cache:get_cache_status:39 - Cache status retrieved successfully
-2025-05-30 04:56:41 | INFO     | app.main:shutdown_event:60 - Application shutting down...
-2025-05-30 04:56:43 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 04:56:44 | INFO     | app.main:startup_event:56 - Application starting up...
-2025-05-30 04:57:08 | INFO     | app.main:shutdown_event:60 - Application shutting down...
-2025-05-30 04:57:09 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 04:57:09 | INFO     | app.main:startup_event:56 - Application starting up...
-2025-05-30 04:57:16 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:57:16 | INFO     | app.api.endpoints.cache:get_cache_status:42 - Cache status retrieved successfully with 0 entries
-2025-05-30 04:57:19 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:57:19 | INFO     | app.api.endpoints.cache:get_cache_status:42 - Cache status retrieved successfully with 0 entries
-2025-05-30 04:57:40 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 04:57:40 | INFO     | app.main:startup_event:56 - Application starting up...
-2025-05-30 04:57:52 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:57:52 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:58:02 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:58:02 | INFO     | app.api.endpoints.cache:get_cache_status:42 - Cache status retrieved successfully with 0 entries
-2025-05-30 04:58:20 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:58:20 | INFO     | app.api.endpoints.process:initiate_process:73 - Process initiated with ID: 436e9369-5ec3-4d96-9bcc-2de073cbc2df
-2025-05-30 04:58:27 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:58:27 | WARNING  | app.api.endpoints.cache:get_cache_status:39 - Error getting cache entry 436e9369-5ec3-4d96-9bcc-2de073cbc2df: _TimedCache._Timer.__call__() takes 1 positional argument but 2 were given
-2025-05-30 04:58:27 | INFO     | app.api.endpoints.cache:get_cache_status:42 - Cache status retrieved successfully with 0 entries
-2025-05-30 04:58:28 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:58:28 | WARNING  | app.api.endpoints.cache:get_cache_status:39 - Error getting cache entry 436e9369-5ec3-4d96-9bcc-2de073cbc2df: _TimedCache._Timer.__call__() takes 1 positional argument but 2 were given
-2025-05-30 04:58:28 | INFO     | app.api.endpoints.cache:get_cache_status:42 - Cache status retrieved successfully with 0 entries
-2025-05-30 04:58:39 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 04:58:39 | WARNING  | app.api.endpoints.cache:get_cache_status:39 - Error getting cache entry 436e9369-5ec3-4d96-9bcc-2de073cbc2df: _TimedCache._Timer.__call__() takes 1 positional argument but 2 were given
-2025-05-30 04:58:39 | INFO     | app.api.endpoints.cache:get_cache_status:42 - Cache status retrieved successfully with 0 entries
-2025-05-30 04:58:39 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:04:15 | INFO     | app.main:shutdown_event:60 - Application shutting down...
-2025-05-30 05:04:16 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 05:04:17 | INFO     | app.main:startup_event:56 - Application starting up...
-2025-05-30 05:04:32 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:04:32 | INFO     | app.api.endpoints.process:initiate_process:73 - Process initiated with ID: 16d8278e-f11a-4960-ad37-4c720c0cfd13
-2025-05-30 05:04:33 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:04:33 | INFO     | app.api.endpoints.process:initiate_process:73 - Process initiated with ID: 948e8868-1bf6-4902-84ac-b572b9496ba9
-2025-05-30 05:04:34 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:04:34 | INFO     | app.api.endpoints.process:initiate_process:73 - Process initiated with ID: d4289f02-3a8f-41cc-af6e-85fd55c5952c
-2025-05-30 05:04:34 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:04:34 | INFO     | app.api.endpoints.process:initiate_process:73 - Process initiated with ID: 8605fada-a544-4c05-91ad-a9f3aa5c1de4
-2025-05-30 05:04:35 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:04:35 | INFO     | app.api.endpoints.process:initiate_process:73 - Process initiated with ID: 92ad2a69-79e3-4f94-8139-d5456d31fe41
-2025-05-30 05:04:35 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:04:35 | INFO     | app.api.endpoints.process:initiate_process:73 - Process initiated with ID: d37a8326-8546-4052-807c-05798d1cfee1
-2025-05-30 05:04:35 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:04:35 | INFO     | app.api.endpoints.process:initiate_process:73 - Process initiated with ID: 18fd5c7b-da90-4760-92ff-c5103884b915
-2025-05-30 05:04:35 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:04:35 | INFO     | app.api.endpoints.process:initiate_process:73 - Process initiated with ID: e5b0f0f4-4e3a-412f-ae87-7ce71a14bb88
-2025-05-30 05:04:35 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:04:35 | INFO     | app.api.endpoints.process:initiate_process:73 - Process initiated with ID: a0ce1efa-a73e-4d4c-85d9-2932beb61bc4
-2025-05-30 05:04:36 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:04:36 | INFO     | app.api.endpoints.process:initiate_process:73 - Process initiated with ID: 6222970e-d4be-4441-afbd-12646a74f08b
-2025-05-30 05:04:38 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:04:38 | INFO     | app.api.endpoints.cache:get_cache_status:36 - Cache status retrieved successfully with 10 entries
-2025-05-30 05:07:30 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:07:30 | ERROR    | app.api.endpoints.process:process_book:129 - Book processing failed: 400: Invalid init_id
-2025-05-30 05:08:02 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:08:02 | INFO     | app.api.endpoints.cache:get_cache_status:36 - Cache status retrieved successfully with 10 entries
-2025-05-30 05:20:41 | INFO     | app.main:shutdown_event:60 - Application shutting down...
-2025-05-30 05:20:42 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 05:20:42 | INFO     | app.main:startup_event:56 - Application starting up...
-2025-05-30 05:20:43 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 05:20:43 | INFO     | app.main:startup_event:56 - Application starting up...
-2025-05-30 05:20:48 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:20:48 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:20:58 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:20:58 | INFO     | app.api.endpoints.process:initiate_process:149 - Process initiated with ID: ad475cd4-fc17-49a3-9bf1-3b2f83bd9675
-2025-05-30 05:21:06 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:21:06 | INFO     | app.api.endpoints.process:initiate_process:149 - Process initiated with ID: 0f0dc32c-71e7-488e-a0aa-4a558e9e8b80
-2025-05-30 05:21:07 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:21:07 | INFO     | app.api.endpoints.process:initiate_process:149 - Process initiated with ID: 32ba4b50-73d4-4092-b63b-a1eb7309a6ef
-2025-05-30 05:21:07 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:21:07 | INFO     | app.api.endpoints.process:initiate_process:149 - Process initiated with ID: a436be7f-cb29-4503-b1b9-44178ce02557
-2025-05-30 05:22:14 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:22:14 | INFO     | app.api.endpoints.process:process_book:185 - Book processing started: 6b532b21-bb87-47c4-8928-64293d3953dd, page: adc723ea-fa27-48f6-a8ed-729e53501f6a
-2025-05-30 05:22:14 | ERROR    | app.api.endpoints.process:process_image_background:136 - Image processing failed: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
-2025-05-30 05:22:40 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:22:40 | INFO     | app.api.endpoints.process:get_process_status:229 - Status retrieved for process: 6b532b21-bb87-47c4-8928-64293d3953dd
-2025-05-30 05:25:24 | INFO     | app.main:shutdown_event:60 - Application shutting down...
-2025-05-30 05:25:25 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 05:25:26 | INFO     | app.main:startup_event:56 - Application starting up...
-2025-05-30 05:25:31 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 05:25:31 | INFO     | app.main:startup_event:56 - Application starting up...
-2025-05-30 05:25:43 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:25:44 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:25:51 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:25:51 | INFO     | app.api.endpoints.process:initiate_process:149 - Process initiated with ID: df044e6f-e6a7-490c-9e79-9943dd86411c
-2025-05-30 05:26:06 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:26:06 | ERROR    | app.api.endpoints.process:process_book:196 - Book processing failed: 400: Invalid init_id
-2025-05-30 05:26:26 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:26:26 | INFO     | app.api.endpoints.process:process_book:185 - Book processing started: 0306a8f8-e065-4e51-abcd-fa34906cc691, page: 9a61cac4-029e-4809-abab-9b3512bf50ad
-2025-05-30 05:26:26 | ERROR    | app.api.endpoints.process:process_image_background:136 - Image processing failed: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
-2025-05-30 05:26:31 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:26:31 | INFO     | app.api.endpoints.process:process_book:185 - Book processing started: a5f9ba09-6644-41e6-a434-7e3baec9db5e, page: 6862b873-05b2-4860-b5ff-df200e85cd26
-2025-05-30 05:26:31 | ERROR    | app.api.endpoints.process:process_image_background:136 - Image processing failed: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
-2025-05-30 05:26:46 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:26:46 | INFO     | app.api.endpoints.process:get_process_status:229 - Status retrieved for process: df044e6f-e6a7-490c-9e79-9943dd86411c
-2025-05-30 05:26:56 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:26:56 | INFO     | app.api.endpoints.process:get_process_status:229 - Status retrieved for process: df044e6f-e6a7-490c-9e79-9943dd86411c
-2025-05-30 05:27:09 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:27:09 | INFO     | app.api.endpoints.cache:get_cache_status:36 - Cache status retrieved successfully with 3 entries
-2025-05-30 05:30:58 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 05:30:59 | INFO     | app.main:startup_event:56 - Application starting up...
-2025-05-30 05:31:17 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:31:17 | INFO     | app.api.endpoints.process:initiate_process:149 - Process initiated with ID: c1a06d1e-00f5-4155-b4cc-c069e88fbce5
-2025-05-30 05:31:33 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:31:33 | INFO     | app.api.endpoints.process:process_book:185 - Book processing started: 6ba55bd1-8735-4948-8298-09f5075e0f79, page: 88fc26ad-0c5f-4fd1-bf58-8ff07f9ea405
-2025-05-30 05:31:33 | ERROR    | app.api.endpoints.process:process_image_background:136 - Image processing failed: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
-2025-05-30 05:31:47 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:31:47 | INFO     | app.api.endpoints.process:get_process_status:229 - Status retrieved for process: c1a06d1e-00f5-4155-b4cc-c069e88fbce5
-2025-05-30 05:31:57 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:31:57 | INFO     | app.api.endpoints.cache:get_cache_status:36 - Cache status retrieved successfully with 2 entries
-2025-05-30 05:32:20 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:32:20 | INFO     | app.api.endpoints.cache:get_cache_status:36 - Cache status retrieved successfully with 2 entries
-2025-05-30 05:32:46 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:32:46 | INFO     | app.api.endpoints.process:get_process_status:229 - Status retrieved for process: 6ba55bd1-8735-4948-8298-09f5075e0f79
-2025-05-30 05:34:07 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 05:34:07 | INFO     | app.main:startup_event:56 - Application starting up...
-2025-05-30 05:39:02 | INFO     | app.main:shutdown_event:60 - Application shutting down...
-2025-05-30 05:39:03 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 05:39:03 | INFO     | app.main:startup_event:56 - Application starting up...
-2025-05-30 05:40:03 | INFO     | app.main:shutdown_event:60 - Application shutting down...
-2025-05-30 05:40:04 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 05:40:04 | INFO     | app.main:startup_event:56 - Application starting up...
-2025-05-30 05:42:38 | INFO     | app.main:shutdown_event:60 - Application shutting down...
-2025-05-30 05:42:39 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 05:42:40 | INFO     | app.main:startup_event:56 - Application starting up...
-2025-05-30 05:42:44 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 05:42:44 | INFO     | app.main:startup_event:56 - Application starting up...
-2025-05-30 05:42:51 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:42:52 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:43:01 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:43:01 | INFO     | app.api.endpoints.process:initiate_process:158 - Process initiated with ID: 873c798b-6cd4-4ad6-909b-3f11eaa02955
-2025-05-30 05:43:36 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:43:36 | INFO     | app.api.endpoints.process:process_book:200 - Book processing started: 873c798b-6cd4-4ad6-909b-3f11eaa02955, page: 2e9b4c8c-d425-4e87-a3d5-00858484a3a2
-2025-05-30 05:43:36 | ERROR    | app.api.endpoints.process:process_image_background:145 - Image processing failed: Client.__init__() got an unexpected keyword argument 'proxies'
-2025-05-30 05:44:06 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:44:06 | INFO     | app.api.endpoints.process:get_process_status:244 - Status retrieved for process: 873c798b-6cd4-4ad6-909b-3f11eaa02955
-2025-05-30 05:44:22 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:44:22 | INFO     | app.api.endpoints.cache:get_cache_status:36 - Cache status retrieved successfully with 1 entries
-2025-05-30 05:46:52 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 05:46:53 | INFO     | app.main:startup_event:56 - Application starting up...
-2025-05-30 05:47:08 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:47:08 | ERROR    | app.api.endpoints.process:process_book:211 - Book processing failed: 400: Invalid init_id
-2025-05-30 05:47:09 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:47:09 | ERROR    | app.api.endpoints.process:process_book:211 - Book processing failed: 400: Invalid init_id
-2025-05-30 05:47:09 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:47:09 | ERROR    | app.api.endpoints.process:process_book:211 - Book processing failed: 400: Invalid init_id
-2025-05-30 05:47:09 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:47:09 | ERROR    | app.api.endpoints.process:process_book:211 - Book processing failed: 400: Invalid init_id
-2025-05-30 05:47:43 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:47:43 | INFO     | app.api.endpoints.process:initiate_process:158 - Process initiated with ID: 958ebab7-e8ef-45ea-a173-7beefc558c21
-2025-05-30 05:47:44 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:47:44 | INFO     | app.api.endpoints.process:initiate_process:158 - Process initiated with ID: 150a5e7e-9d1f-4448-a2fa-8d2f3cbd3ad1
-2025-05-30 05:47:44 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:47:44 | INFO     | app.api.endpoints.process:initiate_process:158 - Process initiated with ID: c94c2a06-0abb-4e03-84cf-2bf40a7b1c05
-2025-05-30 05:47:44 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:47:44 | INFO     | app.api.endpoints.process:initiate_process:158 - Process initiated with ID: 5486b6f7-1c60-41cc-b280-26f470dafdac
-2025-05-30 05:47:55 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:47:55 | INFO     | app.api.endpoints.process:process_book:200 - Book processing started: 5486b6f7-1c60-41cc-b280-26f470dafdac, page: 14f0297e-74e0-44cc-8a20-74bddf6a1120
-2025-05-30 05:47:55 | ERROR    | app.api.endpoints.process:process_image_background:145 - Image processing failed: [Errno 22] Invalid argument: 'storage/uploads\\http://localhost:8000/api/v1/storage/uploads/bb60cb3f-da6c-4851-b66b-c25577b72ed8.jpeg'
-2025-05-30 05:48:04 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:48:04 | INFO     | app.api.endpoints.process:get_process_status:244 - Status retrieved for process: 5486b6f7-1c60-41cc-b280-26f470dafdac
-2025-05-30 05:51:25 | INFO     | app.main:shutdown_event:60 - Application shutting down...
-2025-05-30 05:51:25 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 05:51:26 | INFO     | app.main:startup_event:56 - Application starting up...
-2025-05-30 05:51:34 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:51:34 | ERROR    | app.api.endpoints.process:process_book:211 - Book processing failed: 400: Invalid init_id
-2025-05-30 05:51:41 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:51:41 | INFO     | app.api.endpoints.process:initiate_process:158 - Process initiated with ID: 8ab24bb6-3285-4a2b-96ff-3262907b1966
-2025-05-30 05:51:53 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:51:53 | INFO     | app.api.endpoints.process:process_book:200 - Book processing started: 8ab24bb6-3285-4a2b-96ff-3262907b1966, page: f95e1db9-5456-4fb3-ac5d-c7288a7d6711
-2025-05-30 05:51:53 | ERROR    | app.api.endpoints.process:process_image_background:145 - Image processing failed: [Errno 22] Invalid argument: 'http://localhost:8000/api/v1/storage/uploads/bb60cb3f-da6c-4851-b66b-c25577b72ed8.jpeg'
-2025-05-30 05:52:04 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:52:04 | INFO     | app.api.endpoints.process:get_process_status:244 - Status retrieved for process: 8ab24bb6-3285-4a2b-96ff-3262907b1966
-2025-05-30 05:53:47 | INFO     | app.main:shutdown_event:60 - Application shutting down...
-2025-05-30 05:53:48 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 05:54:07 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 05:54:08 | INFO     | app.main:startup_event:56 - Application starting up...
-2025-05-30 05:54:20 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:54:20 | INFO     | app.api.endpoints.process:initiate_process:181 - Process initiated with ID: 5ab11356-67d3-4f70-920a-6398b4b4e79c
-2025-05-30 05:54:31 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:54:31 | INFO     | app.api.endpoints.process:process_book:223 - Book processing started: 5ab11356-67d3-4f70-920a-6398b4b4e79c, page: b8446557-45bf-47e6-9eab-042456cd2b5b
-2025-05-30 05:54:31 | ERROR    | app.api.endpoints.process:process_image_background:168 - Image processing failed: [Errno 22] Invalid argument: 'storage/uploads\\http://localhost:8000/api/v1/storage/uploads/bb60cb3f-da6c-4851-b66b-c25577b72ed8.jpeg'
-2025-05-30 05:54:40 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 05:54:40 | INFO     | app.api.endpoints.process:get_process_status:267 - Status retrieved for process: 5ab11356-67d3-4f70-920a-6398b4b4e79c
-2025-05-30 05:59:06 | INFO     | app.main:shutdown_event:60 - Application shutting down...
-2025-05-30 05:59:07 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 05:59:08 | INFO     | app.main:startup_event:56 - Application starting up...
-2025-05-30 06:02:55 | INFO     | app.main:shutdown_event:60 - Application shutting down...
-2025-05-30 06:02:56 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 06:02:56 | INFO     | app.main:startup_event:56 - Application starting up...
-2025-05-30 06:03:04 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:03:04 | INFO     | app.api.endpoints.process:initiate_process:200 - Process initiated with ID: 6b9d9afe-4cfc-4cd1-a6d7-7ed95e434d69
-2025-05-30 06:03:29 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:03:29 | INFO     | app.api.endpoints.process:process_book:242 - Book processing started: 6b9d9afe-4cfc-4cd1-a6d7-7ed95e434d69, page: 0246a1a9-da3b-4fef-8d20-f2c3d861b53c
-2025-05-30 06:03:29 | ERROR    | app.api.endpoints.process:convert_to_rgba:121 - Image conversion failed: Image file not found: storage/uploads\http://localhost:8000/api/v1/storage/uploads/bb60cb3f-da6c-4851-b66b-c25577b72ed8.jpeg
-2025-05-30 06:03:29 | ERROR    | app.api.endpoints.process:process_image_background:187 - Image processing failed: Image file not found: storage/uploads\http://localhost:8000/api/v1/storage/uploads/bb60cb3f-da6c-4851-b66b-c25577b72ed8.jpeg
-2025-05-30 06:03:36 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:03:36 | INFO     | app.api.endpoints.process:get_process_status:286 - Status retrieved for process: 6b9d9afe-4cfc-4cd1-a6d7-7ed95e434d69
-2025-05-30 06:04:45 | INFO     | app.main:shutdown_event:60 - Application shutting down...
-2025-05-30 06:04:46 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 06:04:47 | INFO     | app.main:startup_event:56 - Application starting up...
-2025-05-30 06:04:56 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:04:56 | INFO     | app.api.endpoints.process:initiate_process:200 - Process initiated with ID: b199f958-8a31-4211-aaa0-4d6bd7211458
-2025-05-30 06:05:07 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:05:07 | INFO     | app.api.endpoints.process:process_book:242 - Book processing started: b199f958-8a31-4211-aaa0-4d6bd7211458, page: 0d2c9399-9e6f-493e-ad3d-df35d11a2e37
-2025-05-30 06:05:48 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:05:48 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:05:48 | INFO     | app.api.endpoints.cache:get_cache_status:36 - Cache status retrieved successfully with 1 entries
-2025-05-30 06:05:48 | ERROR    | app.api.endpoints.process:get_process_status:293 - Status retrieval failed: 1 validation error for ProcessStatus
-status
-  Input should be a valid string [type=string_type, input_value={'status': 'COMPLETED', '...36c280bd040_result.png'}, input_type=dict]
-    For further information visit https://errors.pydantic.dev/2.6/v/string_type
-2025-05-30 06:08:44 | INFO     | app.main:shutdown_event:60 - Application shutting down...
-2025-05-30 06:08:45 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 06:08:46 | INFO     | app.main:startup_event:56 - Application starting up...
-2025-05-30 06:09:28 | INFO     | app.main:shutdown_event:60 - Application shutting down...
-2025-05-30 06:09:28 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 06:09:29 | INFO     | app.main:startup_event:56 - Application starting up...
-2025-05-30 06:09:45 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:09:45 | INFO     | app.api.endpoints.process:initiate_process:196 - Process initiated with ID: ce5b484b-bc0e-46d7-bcaa-3e9335a8075d
-2025-05-30 06:09:59 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:09:59 | INFO     | app.api.endpoints.process:process_book:235 - Book processing started: ce5b484b-bc0e-46d7-bcaa-3e9335a8075d, page: 94a4caf1-aea2-43fc-ac1c-0aa8b889c4a0
-2025-05-30 06:10:40 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:10:40 | INFO     | app.api.endpoints.process:process_book:235 - Book processing started: ce5b484b-bc0e-46d7-bcaa-3e9335a8075d, page: 81dccc0c-aa0f-4c42-b326-51e4983e0de2
-2025-05-30 06:11:14 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:11:14 | INFO     | app.api.endpoints.cache:get_cache_status:36 - Cache status retrieved successfully with 1 entries
-2025-05-30 06:11:36 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:11:36 | INFO     | app.api.endpoints.process:get_process_status:300 - Status retrieved for process: ce5b484b-bc0e-46d7-bcaa-3e9335a8075d
-2025-05-30 06:32:48 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:33:01 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:33:28 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:33:28 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:33:31 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:33:42 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:33:48 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:33:48 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:33:54 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:33:54 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:34:08 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:34:08 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:34:14 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:34:17 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:35:55 | INFO     | app.main:shutdown_event:60 - Application shutting down...
-2025-05-30 06:35:57 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 06:35:57 | INFO     | app.main:startup_event:55 - Application starting up...
-2025-05-30 06:36:01 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:36:08 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:36:13 | INFO     | app.api.endpoints.health:health_check:39 - Health check performed successfully
-2025-05-30 06:36:13 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:37:18 | INFO     | app.api.endpoints.health:health_check:39 - Health check performed successfully
-2025-05-30 06:37:18 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:37:18 | INFO     | app.main:shutdown_event:59 - Application shutting down...
-2025-05-30 06:37:19 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 06:37:20 | INFO     | app.main:startup_event:55 - Application starting up...
-2025-05-30 06:37:23 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:37:23 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:37:37 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:37:37 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\a173860f-5f47-4d37-b5d3-ee25253e99d4.jpeg
-2025-05-30 06:38:10 | INFO     | app.api.endpoints.health:health_check:39 - Health check performed successfully
-2025-05-30 06:38:35 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:38:35 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:38:35 | INFO     | app.api.endpoints.process:initiate_process:196 - Process initiated with ID: 5b69beab-d847-4f00-ae63-5722d6b430f9
-2025-05-30 06:39:06 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:39:06 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:39:06 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\7f410e7d-6f8f-49f9-a28c-db88d97d910b.png
-2025-05-30 06:39:06 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:39:06 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\ebec153d-db37-4fc8-850d-7179fd9d7c67.jpeg
-2025-05-30 06:39:31 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:39:31 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:39:31 | INFO     | app.api.endpoints.process:process_book:235 - Book processing started: 5b69beab-d847-4f00-ae63-5722d6b430f9, page: 359db341-9239-4e75-b885-18c260267cdf
-2025-05-30 06:40:32 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:40:32 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:40:32 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:40:32 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:40:32 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:40:32 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:40:32 | INFO     | app.api.endpoints.health:health_check:39 - Health check performed successfully
-2025-05-30 06:40:32 | INFO     | app.api.endpoints.health:health_check:39 - Health check performed successfully
-2025-05-30 06:40:32 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:40:32 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:40:32 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:40:32 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:40:32 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:40:32 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:40:32 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:40:32 | INFO     | app.api.endpoints.process:get_process_status:300 - Status retrieved for process: 5b69beab-d847-4f00-ae63-5722d6b430f9
-2025-05-30 06:40:32 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:40:32 | INFO     | app.api.endpoints.process:get_process_status:300 - Status retrieved for process: 5b69beab-d847-4f00-ae63-5722d6b430f9
-2025-05-30 06:40:32 | INFO     | app.api.endpoints.process:get_process_status:300 - Status retrieved for process: 5b69beab-d847-4f00-ae63-5722d6b430f9
-2025-05-30 06:40:32 | INFO     | app.api.endpoints.process:get_process_status:300 - Status retrieved for process: 5b69beab-d847-4f00-ae63-5722d6b430f9
-2025-05-30 06:40:32 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:40:32 | INFO     | app.api.endpoints.process:get_process_status:300 - Status retrieved for process: 5b69beab-d847-4f00-ae63-5722d6b430f9
-2025-05-30 06:40:32 | INFO     | app.api.endpoints.process:get_process_status:300 - Status retrieved for process: 5b69beab-d847-4f00-ae63-5722d6b430f9
-2025-05-30 06:40:32 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:40:32 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:40:32 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:40:32 | INFO     | app.api.endpoints.process:get_process_status:300 - Status retrieved for process: 5b69beab-d847-4f00-ae63-5722d6b430f9
-2025-05-30 06:40:32 | INFO     | app.api.endpoints.process:get_process_status:300 - Status retrieved for process: 5b69beab-d847-4f00-ae63-5722d6b430f9
-2025-05-30 06:40:32 | INFO     | app.api.endpoints.process:get_process_status:300 - Status retrieved for process: 5b69beab-d847-4f00-ae63-5722d6b430f9
-2025-05-30 06:41:12 | INFO     | app.api.endpoints.health:health_check:39 - Health check performed successfully
-2025-05-30 06:46:36 | INFO     | app.api.endpoints.health:health_check:39 - Health check performed successfully
-2025-05-30 06:46:41 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:46:41 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:46:41 | INFO     | app.api.endpoints.process:initiate_process:196 - Process initiated with ID: df2945fb-d63f-4378-a244-209bc6777329
-2025-05-30 06:46:56 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:46:56 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\efc4bb78-5e01-4f77-a0e4-c3890506cb0c.png
-2025-05-30 06:46:56 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:46:56 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\636a0689-8aca-42ee-857a-e8e717a4bcca.jpeg
-2025-05-30 06:47:24 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:47:24 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:47:24 | INFO     | app.api.endpoints.process:process_book:235 - Book processing started: df2945fb-d63f-4378-a244-209bc6777329, page: 7a69881c-e492-499f-a95c-e7739b380663
-2025-05-30 06:48:28 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:48:28 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 06:48:28 | INFO     | app.api.endpoints.process:get_process_status:300 - Status retrieved for process: df2945fb-d63f-4378-a244-209bc6777329
-2025-05-30 07:16:01 | INFO     | app.main:shutdown_event:59 - Application shutting down...
-2025-05-30 07:16:03 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 07:16:03 | INFO     | app.main:startup_event:55 - Application starting up...
-2025-05-30 07:17:02 | INFO     | app.api.endpoints.health:health_check:39 - Health check performed successfully
-2025-05-30 07:17:02 | INFO     | app.main:shutdown_event:59 - Application shutting down...
-2025-05-30 07:17:03 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-05-30 07:17:04 | INFO     | app.main:startup_event:55 - Application starting up...
-2025-05-30 07:17:06 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 07:17:06 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 07:17:06 | INFO     | app.api.endpoints.process:initiate_process:196 - Process initiated with ID: 2c39c450-111a-4c38-ac29-c9fce615c227
-2025-05-30 07:17:27 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 07:17:27 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\2b1a01a1-ff7e-46b6-9919-773082a4afe7.png
-2025-05-30 07:17:27 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 07:17:27 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\3ac468a6-e1d3-4cd4-8ac3-59a0cf986613.jpg
-2025-05-30 07:17:27 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 07:18:07 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 07:18:07 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 07:18:07 | INFO     | app.api.endpoints.process:process_book:235 - Book processing started: 2c39c450-111a-4c38-ac29-c9fce615c227, page: 14be336c-df25-4267-b705-c576160c5d22
-2025-05-30 07:18:22 | ERROR    | app.api.endpoints.process:process_image_background:183 - Image processing failed: Error code: 400 - {'error': {'message': 'Request was rejected as a result of the safety system. Request may contain content that is not allowed by the safety system.', 'type': 'image_generation_user_error', 'param': None, 'code': 'moderation_blocked'}}
-2025-05-30 07:18:22 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 07:18:22 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 07:18:22 | INFO     | app.api.endpoints.process:get_process_status:300 - Status retrieved for process: 2c39c450-111a-4c38-ac29-c9fce615c227
-2025-05-30 07:18:57 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 07:18:57 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\a5b2f3da-9231-4a96-abe0-dddcf04e4315.png
-2025-05-30 07:18:57 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 07:18:57 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\97055c18-87b9-404a-8332-7c0da8c8ca76.png
-2025-05-30 07:18:57 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 07:19:02 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 07:19:02 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 07:19:02 | INFO     | app.api.endpoints.process:process_book:235 - Book processing started: 2c39c450-111a-4c38-ac29-c9fce615c227, page: 6c915080-8d64-4ff2-a1eb-a901ce4b6b02
-2025-05-30 07:19:38 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 07:19:38 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-05-30 07:19:38 | INFO     | app.api.endpoints.process:get_process_status:300 - Status retrieved for process: 2c39c450-111a-4c38-ac29-c9fce615c227
-2025-05-30 07:19:40 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:08:13 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-06-04 01:08:14 | INFO     | app.main:startup_event:55 - Application starting up...
-2025-06-04 01:08:18 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:08:18 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:08:22 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:08:27 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:08:35 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:22:27 | INFO     | app.main:shutdown_event:59 - Application shutting down...
-2025-06-04 01:22:29 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-06-04 01:22:30 | INFO     | app.main:startup_event:55 - Application starting up...
-2025-06-04 01:24:31 | INFO     | app.api.endpoints.health:health_check:39 - Health check performed successfully
-2025-06-04 01:24:34 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:24:34 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:24:34 | INFO     | app.api.endpoints.process:initiate_process:143 - Process initiated with ID: 8387bd75-4ae6-4eb9-a1b7-894b0be3943a
-2025-06-04 01:24:44 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:24:44 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\0de0d3bd-1b18-4fb4-900c-8243a00da7c9.jpeg
-2025-06-04 01:24:44 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:24:44 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\4c09e3f2-a178-4725-802c-5572b496b258.jpeg
-2025-06-04 01:24:44 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:33:07 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:33:07 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:33:07 | INFO     | app.api.endpoints.process:initiate_process:143 - Process initiated with ID: 0df778d0-989b-4e3a-9d6f-27eba2addc32
-2025-06-04 01:33:23 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:33:23 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\58626f05-f417-48ed-8c82-8735d9b8c7ff.jpeg
-2025-06-04 01:33:23 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:33:23 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\9ce95eab-afb8-46d4-8177-9b6af1663c16.jpeg
-2025-06-04 01:33:23 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:33:34 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:33:34 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:33:34 | INFO     | app.api.endpoints.process:process_book:182 - Book processing started: 0df778d0-989b-4e3a-9d6f-27eba2addc32, page: 4d8c22fd-9688-46a7-b6ae-d08d8830a65b
-2025-06-04 01:33:41 | ERROR    | app.api.endpoints.process:process_image_background:130 - Image processing failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pbMA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
-2025-06-04 01:33:41 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:33:41 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:33:41 | INFO     | app.api.endpoints.process:get_process_status:247 - Status retrieved for process: 0df778d0-989b-4e3a-9d6f-27eba2addc32
-2025-06-04 01:36:41 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:36:41 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:36:41 | INFO     | app.api.endpoints.process:get_process_status:247 - Status retrieved for process: 0df778d0-989b-4e3a-9d6f-27eba2addc32
-2025-06-04 01:36:47 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:36:47 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:36:47 | INFO     | app.api.endpoints.process:get_process_status:247 - Status retrieved for process: 0df778d0-989b-4e3a-9d6f-27eba2addc32
-2025-06-04 01:36:58 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:36:58 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:36:58 | INFO     | app.api.endpoints.process:initiate_process:143 - Process initiated with ID: 4fa07bc0-88c4-4005-a295-73a8507057eb
-2025-06-04 01:37:15 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:37:15 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\8d5dcc96-0dab-4fa2-a73d-d216ca161818.jpeg
-2025-06-04 01:37:15 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:37:15 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\41726608-68ae-4644-97ca-ae7d4b4d684e.jpg
-2025-06-04 01:37:15 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:37:18 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:37:18 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:37:18 | INFO     | app.api.endpoints.process:process_book:182 - Book processing started: 4fa07bc0-88c4-4005-a295-73a8507057eb, page: 4db3c103-8ee1-4e3c-b30a-89723e4ef634
-2025-06-04 01:37:24 | ERROR    | app.api.endpoints.process:process_image_background:130 - Image processing failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************pbMA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
-2025-06-04 01:37:24 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:37:24 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:37:24 | INFO     | app.api.endpoints.process:get_process_status:247 - Status retrieved for process: 4fa07bc0-88c4-4005-a295-73a8507057eb
-2025-06-04 01:37:37 | INFO     | app.main:shutdown_event:59 - Application shutting down...
-2025-06-04 01:37:51 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-06-04 01:37:52 | INFO     | app.main:startup_event:55 - Application starting up...
-2025-06-04 01:37:55 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:37:55 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:37:55 | ERROR    | app.api.endpoints.process:get_process_status:254 - Status retrieval failed: 404: Process not found
-2025-06-04 01:37:58 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:37:58 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:37:58 | ERROR    | app.api.endpoints.process:get_process_status:254 - Status retrieval failed: 404: Process not found
-2025-06-04 01:38:02 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:38:02 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:38:02 | INFO     | app.api.endpoints.process:initiate_process:143 - Process initiated with ID: 6564dd0b-3899-4539-8748-07d8b7093c98
-2025-06-04 01:38:15 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:38:15 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\a1b62c7a-799c-4e93-a572-d9994ecb28ff.jpeg
-2025-06-04 01:38:15 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:38:15 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\b05bed6e-70c3-4ad6-bd59-62dc23453b69.jpg
-2025-06-04 01:38:15 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:38:18 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:38:18 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:38:18 | INFO     | app.api.endpoints.process:process_book:182 - Book processing started: 6564dd0b-3899-4539-8748-07d8b7093c98, page: 8f78e990-06b7-4200-8bfe-89bbea047bc4
-2025-06-04 01:39:05 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:39:05 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:39:05 | INFO     | app.api.endpoints.process:get_process_status:247 - Status retrieved for process: 6564dd0b-3899-4539-8748-07d8b7093c98
-2025-06-04 01:39:05 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:39:14 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:39:14 | ERROR    | app.api.endpoints.process:get_process_status:254 - Status retrieval failed: 404: Process not found
-2025-06-04 01:39:20 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:39:20 | ERROR    | app.api.endpoints.process:get_process_status:254 - Status retrieval failed: 404: Process not found
-2025-06-04 01:40:56 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:40:56 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:40:56 | INFO     | app.api.endpoints.process:initiate_process:143 - Process initiated with ID: 89b14fc7-0f01-450a-9821-214ebcfa7524
-2025-06-04 01:44:04 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:44:04 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\17df6f43-72c8-48d0-802c-b2870f179e06.jpeg
-2025-06-04 01:44:04 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:44:04 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\b2bc98e0-76bc-42de-be39-16effb59ae7d.jpg
-2025-06-04 01:44:04 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:44:44 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:44:44 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:44:44 | INFO     | app.api.endpoints.process:initiate_process:143 - Process initiated with ID: 4bbd864d-446c-46c5-bf5d-c3fdf87ffdce
-2025-06-04 01:44:59 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:44:59 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\90374851-2a9c-455e-baf0-8cb5286a72e6.jpeg
-2025-06-04 01:44:59 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:44:59 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:44:59 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\5c4685ab-9870-4636-8882-4f64bbe43980.jpg
-2025-06-04 01:45:14 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:45:14 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:45:14 | INFO     | app.api.endpoints.process:process_book:182 - Book processing started: 4bbd864d-446c-46c5-bf5d-c3fdf87ffdce, page: 2ae05407-3311-4ab3-9539-a860f2f23351
-2025-06-04 01:46:07 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:46:07 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:46:07 | INFO     | app.api.endpoints.process:get_process_status:247 - Status retrieved for process: 4bbd864d-446c-46c5-bf5d-c3fdf87ffdce
-2025-06-04 01:46:08 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:56:12 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:56:12 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:56:12 | INFO     | app.api.endpoints.process:initiate_process:143 - Process initiated with ID: 57721d17-dd3d-4a71-8ab6-91466c9d58f3
-2025-06-04 01:56:12 | INFO     | app.main:shutdown_event:59 - Application shutting down...
-2025-06-04 01:56:14 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-06-04 01:56:15 | INFO     | app.main:startup_event:55 - Application starting up...
-2025-06-04 01:56:27 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:56:27 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\581bbc22-ec9e-43b4-89ae-3811b9578cca.jpeg
-2025-06-04 01:56:27 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:56:27 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\9f691921-856c-494c-a152-2f06b250b1a2.png
-2025-06-04 01:56:27 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:58:29 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:58:29 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:58:29 | ERROR    | app.api.endpoints.process:process_book:197 - Book processing failed: 400: Invalid init_id
-2025-06-04 01:58:45 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:58:46 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:58:46 | INFO     | app.api.endpoints.process:initiate_process:146 - Process initiated with ID: 89051f3e-5df4-43b8-a85c-6a0a387caf33
-2025-06-04 01:59:00 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:59:00 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\7395fb7e-f035-4838-b2f1-9341e20905a7.png
-2025-06-04 01:59:00 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:59:00 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\95174495-7fef-4de2-bf28-cdb1b7b47384.png
-2025-06-04 01:59:01 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:59:03 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:59:03 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:59:03 | INFO     | app.api.endpoints.process:process_book:185 - Book processing started: 89051f3e-5df4-43b8-a85c-6a0a387caf33, page: 49233118-2c6d-4efe-865e-1aa8c67ea452
-2025-06-04 01:59:05 | ERROR    | app.api.endpoints.process:process_image_background:133 - Image processing failed: Images.edit() got an unexpected keyword argument 'moderation'
-2025-06-04 01:59:08 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:59:08 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:59:08 | INFO     | app.api.endpoints.process:get_process_status:250 - Status retrieved for process: 89051f3e-5df4-43b8-a85c-6a0a387caf33
-2025-06-04 01:59:35 | INFO     | app.main:shutdown_event:59 - Application shutting down...
-2025-06-04 01:59:37 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-06-04 01:59:38 | INFO     | app.main:startup_event:55 - Application starting up...
-2025-06-04 01:59:40 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:59:40 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:59:40 | ERROR    | app.api.endpoints.process:get_process_status:256 - Status retrieval failed: 404: Process not found
-2025-06-04 01:59:43 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:59:43 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:59:43 | INFO     | app.api.endpoints.process:initiate_process:145 - Process initiated with ID: 112b724d-deca-4e9a-9794-1a56ef6141aa
-2025-06-04 01:59:46 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:59:46 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\744c2c1d-0b27-4008-a531-7dfea4195443.png
-2025-06-04 01:59:46 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:59:46 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\0f6f2c66-e2c1-4691-a6d3-00eecf938508.png
-2025-06-04 01:59:46 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:59:49 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:59:49 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:59:49 | INFO     | app.api.endpoints.process:process_book:184 - Book processing started: 112b724d-deca-4e9a-9794-1a56ef6141aa, page: e106361f-bbfa-46d0-b052-c4d8de856e6c
-2025-06-04 01:59:51 | ERROR    | app.api.endpoints.process:process_image_background:132 - Image processing failed: Images.edit() got an unexpected keyword argument 'output_format'
-2025-06-04 01:59:53 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:59:53 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 01:59:53 | INFO     | app.api.endpoints.process:get_process_status:249 - Status retrieved for process: 112b724d-deca-4e9a-9794-1a56ef6141aa
-2025-06-04 02:00:44 | INFO     | app.main:shutdown_event:59 - Application shutting down...
-2025-06-04 02:00:45 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-06-04 02:00:46 | INFO     | app.main:startup_event:55 - Application starting up...
-2025-06-04 02:00:55 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 02:00:55 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 02:00:55 | INFO     | app.api.endpoints.process:initiate_process:144 - Process initiated with ID: b2145626-72c7-48b8-b0cc-4b1a02ace94a
-2025-06-04 02:00:58 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 02:00:58 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\e69c2def-2ea0-40e8-9ade-8b21f240220e.png
-2025-06-04 02:00:58 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 02:00:58 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\3ccaf0e0-dc63-4098-9848-b72e0a50b897.png
-2025-06-04 02:00:58 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 02:01:00 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 02:01:00 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 02:01:00 | INFO     | app.api.endpoints.process:process_book:183 - Book processing started: b2145626-72c7-48b8-b0cc-4b1a02ace94a, page: 46a687eb-880c-4585-a4d0-db3e401020fb
-2025-06-04 02:01:11 | ERROR    | app.api.endpoints.process:process_image_background:131 - Image processing failed: Error code: 400 - {'error': {'message': 'Request was rejected as a result of the safety system. Request may contain content that is not allowed by the safety system.', 'type': 'image_generation_user_error', 'param': None, 'code': 'moderation_blocked'}}
-2025-06-04 02:01:11 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 02:01:11 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 02:01:11 | INFO     | app.api.endpoints.process:get_process_status:248 - Status retrieved for process: b2145626-72c7-48b8-b0cc-4b1a02ace94a
-2025-06-04 02:08:13 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 02:08:13 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 02:08:13 | INFO     | app.api.endpoints.process:initiate_process:144 - Process initiated with ID: 3a357faa-ff01-436e-b3ae-578120757a51
-2025-06-04 02:08:27 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 02:08:27 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\241358f2-f61e-4e30-8ed1-fd247042395f.jpeg
-2025-06-04 02:08:28 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 02:08:28 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\415c6af5-3025-4fc8-ac0d-e3cf28f5affc.png
-2025-06-04 02:08:28 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 02:08:30 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 02:08:30 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 02:08:30 | INFO     | app.api.endpoints.process:process_book:183 - Book processing started: 3a357faa-ff01-436e-b3ae-578120757a51, page: 79a99abb-505f-45dd-a73f-06cbb8c0b54b
-2025-06-04 02:09:53 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 02:09:53 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 02:09:53 | INFO     | app.api.endpoints.cache:get_cache_status:36 - Cache status retrieved successfully with 2 entries
-2025-06-04 02:09:54 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 02:09:54 | INFO     | app.api.endpoints.process:get_process_status:248 - Status retrieved for process: 3a357faa-ff01-436e-b3ae-578120757a51
-2025-06-04 02:09:54 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 02:10:39 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 02:40:15 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 02:40:15 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 02:40:15 | INFO     | app.api.endpoints.process:get_process_status:248 - Status retrieved for process: 3a357faa-ff01-436e-b3ae-578120757a51
-2025-06-04 02:40:19 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 02:40:19 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 02:40:19 | INFO     | app.api.endpoints.process:initiate_process:144 - Process initiated with ID: c6897a9b-a9f6-4de5-b710-7c2416d703c6
-2025-06-04 02:40:24 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 02:40:24 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\58769855-a008-4c2e-a5c9-2892649eadc5.jpeg
-2025-06-04 02:40:24 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 02:40:24 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\b2bb0452-4192-4e69-970c-acf17f93cc2c.png
-2025-06-04 02:40:24 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 02:40:30 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 02:40:30 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 02:40:30 | INFO     | app.api.endpoints.process:process_book:183 - Book processing started: c6897a9b-a9f6-4de5-b710-7c2416d703c6, page: 7af0e07e-c98e-45af-af1f-e5e61bdb924a
-2025-06-04 02:42:07 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 02:42:07 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 02:42:07 | INFO     | app.api.endpoints.process:get_process_status:248 - Status retrieved for process: c6897a9b-a9f6-4de5-b710-7c2416d703c6
-2025-06-04 02:42:11 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 02:46:52 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 02:46:52 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 02:46:52 | INFO     | app.api.endpoints.process:initiate_process:144 - Process initiated with ID: a4f66832-dd9a-4cc1-845b-e5a43e01199c
-2025-06-04 02:47:57 | INFO     | app.main:shutdown_event:59 - Application shutting down...
-2025-06-04 03:04:24 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-06-04 03:05:03 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-06-04 03:05:04 | INFO     | app.main:startup_event:55 - Application starting up...
-2025-06-04 03:05:29 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:05:29 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\859696e4-c1ae-4947-a7e1-ab5c9dd78211.jpeg
-2025-06-04 03:05:30 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:05:30 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\9530ea4d-3535-4f99-a612-73c928a111f7.png
-2025-06-04 03:05:30 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:05:33 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:05:33 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:05:33 | ERROR    | app.api.endpoints.process:process_book:288 - Book processing failed: 400: Invalid init_id
-2025-06-04 03:05:45 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:05:45 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:05:45 | INFO     | app.api.endpoints.process:initiate_process:237 - Process initiated with ID: ff8cdf76-f6c3-4985-b4b2-ab3443c1d8dc
-2025-06-04 03:06:03 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:06:03 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\1d15f285-415c-4216-ba9e-595107f6aabd.jpeg
-2025-06-04 03:06:03 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:06:03 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:06:03 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\2071111a-aaf8-4bde-a26d-2c35322ca45d.png
-2025-06-04 03:06:06 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:06:06 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:06:06 | INFO     | app.api.endpoints.process:process_book:276 - Book processing started: ff8cdf76-f6c3-4985-b4b2-ab3443c1d8dc, page: 5d7cb83c-d3dd-4759-969a-deb872f84ccd
-2025-06-04 03:06:12 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:06:12 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:06:12 | INFO     | app.api.endpoints.process:get_process_status:341 - Status retrieved for process: ff8cdf76-f6c3-4985-b4b2-ab3443c1d8dc
-2025-06-04 03:06:23 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:06:23 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:06:23 | INFO     | app.api.endpoints.process:get_process_status:341 - Status retrieved for process: ff8cdf76-f6c3-4985-b4b2-ab3443c1d8dc
-2025-06-04 03:06:35 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:06:35 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:06:35 | INFO     | app.api.endpoints.process:get_process_status:341 - Status retrieved for process: ff8cdf76-f6c3-4985-b4b2-ab3443c1d8dc
-2025-06-04 03:06:42 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:06:42 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:06:42 | INFO     | app.api.endpoints.process:get_process_status:341 - Status retrieved for process: ff8cdf76-f6c3-4985-b4b2-ab3443c1d8dc
-2025-06-04 03:06:49 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:06:49 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:06:49 | INFO     | app.api.endpoints.process:get_process_status:341 - Status retrieved for process: ff8cdf76-f6c3-4985-b4b2-ab3443c1d8dc
-2025-06-04 03:06:55 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:06:55 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:06:55 | INFO     | app.api.endpoints.process:get_process_status:341 - Status retrieved for process: ff8cdf76-f6c3-4985-b4b2-ab3443c1d8dc
-2025-06-04 03:07:02 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:07:02 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:07:02 | INFO     | app.api.endpoints.process:get_process_status:341 - Status retrieved for process: ff8cdf76-f6c3-4985-b4b2-ab3443c1d8dc
-2025-06-04 03:07:07 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:07:07 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:07:07 | INFO     | app.api.endpoints.process:get_process_status:341 - Status retrieved for process: ff8cdf76-f6c3-4985-b4b2-ab3443c1d8dc
-2025-06-04 03:07:13 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:07:13 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:07:13 | INFO     | app.api.endpoints.process:get_process_status:341 - Status retrieved for process: ff8cdf76-f6c3-4985-b4b2-ab3443c1d8dc
-2025-06-04 03:07:19 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:07:19 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:07:19 | INFO     | app.api.endpoints.process:get_process_status:341 - Status retrieved for process: ff8cdf76-f6c3-4985-b4b2-ab3443c1d8dc
-2025-06-04 03:07:25 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:07:25 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:07:25 | INFO     | app.api.endpoints.process:get_process_status:341 - Status retrieved for process: ff8cdf76-f6c3-4985-b4b2-ab3443c1d8dc
-2025-06-04 03:07:31 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:07:31 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:07:31 | INFO     | app.api.endpoints.process:get_process_status:341 - Status retrieved for process: ff8cdf76-f6c3-4985-b4b2-ab3443c1d8dc
-2025-06-04 03:07:37 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:07:37 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:07:37 | INFO     | app.api.endpoints.process:get_process_status:341 - Status retrieved for process: ff8cdf76-f6c3-4985-b4b2-ab3443c1d8dc
-2025-06-04 03:07:43 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:07:43 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:07:43 | INFO     | app.api.endpoints.process:get_process_status:341 - Status retrieved for process: ff8cdf76-f6c3-4985-b4b2-ab3443c1d8dc
-2025-06-04 03:07:49 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:07:49 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:07:49 | INFO     | app.api.endpoints.process:get_process_status:341 - Status retrieved for process: ff8cdf76-f6c3-4985-b4b2-ab3443c1d8dc
-2025-06-04 03:07:56 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:07:56 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:07:56 | INFO     | app.api.endpoints.process:get_process_status:341 - Status retrieved for process: ff8cdf76-f6c3-4985-b4b2-ab3443c1d8dc
-2025-06-04 03:08:02 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:08:02 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:08:02 | INFO     | app.api.endpoints.process:get_process_status:341 - Status retrieved for process: ff8cdf76-f6c3-4985-b4b2-ab3443c1d8dc
-2025-06-04 03:08:08 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:08:08 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:08:08 | INFO     | app.api.endpoints.process:get_process_status:341 - Status retrieved for process: ff8cdf76-f6c3-4985-b4b2-ab3443c1d8dc
-2025-06-04 03:09:09 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:09:09 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:09:09 | INFO     | app.api.endpoints.process:get_process_status:341 - Status retrieved for process: ff8cdf76-f6c3-4985-b4b2-ab3443c1d8dc
-2025-06-04 03:09:16 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:09:16 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:09:16 | INFO     | app.api.endpoints.process:get_process_status:341 - Status retrieved for process: ff8cdf76-f6c3-4985-b4b2-ab3443c1d8dc
-2025-06-04 03:09:26 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:09:26 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:09:26 | INFO     | app.api.endpoints.process:get_process_status:341 - Status retrieved for process: ff8cdf76-f6c3-4985-b4b2-ab3443c1d8dc
-2025-06-04 03:09:32 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:09:32 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:09:32 | INFO     | app.api.endpoints.process:get_process_status:341 - Status retrieved for process: ff8cdf76-f6c3-4985-b4b2-ab3443c1d8dc
-2025-06-04 03:09:43 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:09:43 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:09:43 | INFO     | app.api.endpoints.process:get_process_status:341 - Status retrieved for process: ff8cdf76-f6c3-4985-b4b2-ab3443c1d8dc
-2025-06-04 03:10:08 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:10:08 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:10:08 | INFO     | app.api.endpoints.process:get_process_status:341 - Status retrieved for process: ff8cdf76-f6c3-4985-b4b2-ab3443c1d8dc
-2025-06-04 03:10:19 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:10:19 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:10:19 | INFO     | app.api.endpoints.process:get_process_status:341 - Status retrieved for process: ff8cdf76-f6c3-4985-b4b2-ab3443c1d8dc
-2025-06-04 03:11:07 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:11:07 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 03:11:07 | INFO     | app.api.endpoints.process:get_process_status:341 - Status retrieved for process: ff8cdf76-f6c3-4985-b4b2-ab3443c1d8dc
-2025-06-04 03:11:57 | INFO     | app.main:shutdown_event:59 - Application shutting down...
-2025-06-04 03:11:59 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-06-04 03:11:59 | INFO     | app.main:startup_event:55 - Application starting up...
-2025-06-04 20:17:29 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-06-04 20:17:30 | INFO     | app.main:startup_event:55 - Application starting up...
-2025-06-04 20:17:34 | INFO     | app.api.endpoints.health:health_check:39 - Health check performed successfully
-2025-06-04 20:25:01 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 20:25:01 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 20:25:01 | INFO     | app.api.endpoints.process:initiate_process:142 - Process initiated with ID: 209ae741-630a-4d44-8acb-c359b46b5452
-2025-06-04 20:25:23 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 20:25:23 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\e8f1e794-195b-4d13-bf80-d6148e415ff8.jpeg
-2025-06-04 20:25:23 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 20:25:23 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\6b0ee2aa-1e4d-46ce-abb3-af09e44d36d3.png
-2025-06-04 20:25:24 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 20:28:52 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 20:28:52 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 20:28:52 | INFO     | app.api.endpoints.process:process_book:181 - Book processing started: 209ae741-630a-4d44-8acb-c359b46b5452, page: bc983671-48fc-43f3-97b1-d80cfc1d7c2b
-2025-06-04 20:30:17 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 20:30:17 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 20:30:17 | INFO     | app.api.endpoints.process:get_process_status:246 - Status retrieved for process: 209ae741-630a-4d44-8acb-c359b46b5452
-2025-06-04 20:30:27 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 20:34:07 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 20:34:07 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 20:34:07 | INFO     | app.api.endpoints.process:get_process_status:246 - Status retrieved for process: 209ae741-630a-4d44-8acb-c359b46b5452
-2025-06-04 20:34:13 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 20:34:13 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 20:34:13 | INFO     | app.api.endpoints.process:initiate_process:142 - Process initiated with ID: 4ba720b8-af46-4051-bfab-f0394facc158
-2025-06-04 20:34:31 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 20:34:31 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 20:34:31 | INFO     | app.api.endpoints.process:initiate_process:142 - Process initiated with ID: a2a09106-96bf-4baa-a214-f68fc163f761
-2025-06-04 20:34:48 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 20:34:48 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\e2fbc482-6ae9-4142-bb91-80dc09fb07c6.jpeg
-2025-06-04 20:34:48 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 20:34:48 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\22f49b51-5d24-4e50-946d-3604a1d91b6e.png
-2025-06-04 20:34:49 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 20:34:54 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 20:34:54 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 20:34:54 | INFO     | app.api.endpoints.process:process_book:181 - Book processing started: a2a09106-96bf-4baa-a214-f68fc163f761, page: fd42ed89-07da-4f4e-9af8-a7b1e93a1c2c
-2025-06-04 20:36:28 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 20:36:28 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 20:36:28 | INFO     | app.api.endpoints.process:get_process_status:246 - Status retrieved for process: a2a09106-96bf-4baa-a214-f68fc163f761
-2025-06-04 20:36:28 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 23:21:57 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-06-04 23:21:59 | INFO     | app.main:startup_event:55 - Application starting up...
-2025-06-04 23:23:04 | INFO     | app.api.endpoints.health:health_check:39 - Health check performed successfully
-2025-06-04 23:31:21 | INFO     | app.main:shutdown_event:59 - Application shutting down...
-2025-06-04 23:31:23 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-06-04 23:31:24 | INFO     | app.main:startup_event:55 - Application starting up...
-2025-06-04 23:34:58 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 23:34:58 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 23:34:58 | INFO     | app.api.endpoints.process:initiate_process:142 - Process initiated with ID: c70c6b9f-b470-486e-a5bf-05d065a56f4e
-2025-06-04 23:37:56 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 23:37:56 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\420dcec7-1745-47a0-aca1-34ebf3d067fb.jpeg
-2025-06-04 23:37:56 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 23:37:56 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\e476af3f-fa5a-4f2d-96bc-3ce15095364d.png
-2025-06-04 23:37:56 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 23:38:31 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 23:38:31 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 23:38:31 | INFO     | app.api.endpoints.process:process_book:181 - Book processing started: c70c6b9f-b470-486e-a5bf-05d065a56f4e, page: 7a4e369f-ec08-48ce-b612-180e39f3098e
-2025-06-04 23:39:40 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 23:39:40 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 23:39:40 | INFO     | app.api.endpoints.process:get_process_status:246 - Status retrieved for process: c70c6b9f-b470-486e-a5bf-05d065a56f4e
-2025-06-04 23:39:41 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 23:42:42 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 23:42:42 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 23:42:42 | INFO     | app.api.endpoints.process:initiate_process:142 - Process initiated with ID: 78d91a56-3f2d-4b3f-9021-879a29c16104
-2025-06-04 23:43:00 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 23:43:00 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\5d76ac2c-43b4-4a7b-b37b-7d1f2646658b.jpeg
-2025-06-04 23:43:00 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 23:43:00 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\bb9adbae-fd02-4a9e-a509-cbe23bb24d10.jpeg
-2025-06-04 23:43:01 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 23:43:04 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 23:43:04 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 23:43:04 | INFO     | app.api.endpoints.process:process_book:181 - Book processing started: 78d91a56-3f2d-4b3f-9021-879a29c16104, page: f54ce8b6-0bcd-4df5-b316-56bcb3821fee
-2025-06-04 23:44:23 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 23:44:23 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 23:44:23 | INFO     | app.api.endpoints.process:get_process_status:246 - Status retrieved for process: 78d91a56-3f2d-4b3f-9021-879a29c16104
-2025-06-04 23:44:25 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 23:48:55 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 23:48:55 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 23:48:55 | INFO     | app.api.endpoints.process:initiate_process:142 - Process initiated with ID: fc95cd46-7b6e-43d3-b950-9f53d7026056
-2025-06-04 23:50:22 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 23:50:22 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\d4bd3775-7a70-4633-8d6c-4e32e3d36ee6.png
-2025-06-04 23:50:22 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 23:50:22 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\6bb0d7b7-766a-4a12-ba67-42d8ee8925cd.png
-2025-06-04 23:50:22 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 23:50:25 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 23:50:25 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 23:50:25 | INFO     | app.api.endpoints.process:process_book:181 - Book processing started: fc95cd46-7b6e-43d3-b950-9f53d7026056, page: 4a9ff9d3-38dd-40c0-bc8e-081f7e9350e7
-2025-06-04 23:51:29 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 23:51:29 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-04 23:51:29 | INFO     | app.api.endpoints.process:get_process_status:246 - Status retrieved for process: fc95cd46-7b6e-43d3-b950-9f53d7026056
-2025-06-04 23:51:29 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-05 00:40:04 | INFO     | app.main:shutdown_event:59 - Application shutting down...
-2025-06-05 00:40:06 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-06-05 00:40:07 | INFO     | app.main:startup_event:55 - Application starting up...
-2025-06-05 00:45:05 | INFO     | app.main:shutdown_event:59 - Application shutting down...
-2025-06-05 00:45:06 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-06-05 00:45:08 | INFO     | app.main:startup_event:55 - Application starting up...
-2025-06-05 00:48:21 | INFO     | app.api.endpoints.health:health_check:39 - Health check performed successfully
-2025-06-05 00:48:24 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-05 00:48:24 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-05 00:48:24 | INFO     | app.api.endpoints.process:initiate_process:142 - Process initiated with ID: 0381cb8f-3c23-4f75-878c-028cfe8aae2c
-2025-06-05 00:48:45 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-05 00:48:45 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\4e822f42-e7c1-4426-82f2-47866c788121.jpeg
-2025-06-05 00:48:45 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-05 00:48:45 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\ede340dc-bc2c-4761-94bc-4d140d53a6b5.png
-2025-06-05 00:48:45 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-05 00:49:01 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-05 00:49:01 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-05 00:49:01 | INFO     | app.api.endpoints.process:process_book:181 - Book processing started: 0381cb8f-3c23-4f75-878c-028cfe8aae2c, page: 8519b1c0-1e60-49d1-ac83-977b42b276eb
-2025-06-05 00:50:08 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-05 00:50:08 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-05 00:50:08 | INFO     | app.api.endpoints.process:get_process_status:246 - Status retrieved for process: 0381cb8f-3c23-4f75-878c-028cfe8aae2c
-2025-06-05 00:50:10 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-05 00:50:40 | INFO     | app.main:shutdown_event:59 - Application shutting down...
-2025-06-05 01:19:16 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-06-05 01:20:35 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-06-05 01:20:44 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-06-05 01:21:26 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-06-05 01:21:54 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-06-05 01:22:12 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-06-05 01:22:35 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-06-05 01:22:36 | INFO     | app.main:startup_event:55 - Application starting up...
-2025-06-05 01:22:40 | INFO     | app.api.endpoints.health:health_check:39 - Health check performed successfully
-2025-06-05 01:22:43 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-05 01:22:43 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-05 01:22:43 | INFO     | app.api.endpoints.process:initiate_process:152 - Process initiated with ID: b76ba434-7383-4c6c-bc46-5f7927e4af53
-2025-06-05 01:22:53 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-05 01:22:53 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\17dedb7c-877a-43f3-a29a-97c47d4698cd.png
-2025-06-05 01:22:53 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-05 01:22:53 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\6f62e2af-0e8b-454d-80f9-95dd3419e763.png
-2025-06-05 01:22:54 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-05 01:22:58 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-05 01:22:58 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-05 01:22:58 | INFO     | app.api.endpoints.process:process_book:191 - Book processing started: b76ba434-7383-4c6c-bc46-5f7927e4af53, page: 581b3c48-a6a7-4b52-9c9e-7dd69f4453c4
-2025-06-05 01:24:10 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-05 01:24:10 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-05 01:24:10 | INFO     | app.api.endpoints.process:get_process_status:256 - Status retrieved for process: b76ba434-7383-4c6c-bc46-5f7927e4af53
-2025-06-05 01:24:11 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-05 01:27:43 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-05 01:27:43 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-05 01:27:43 | INFO     | app.api.endpoints.process:initiate_process:152 - Process initiated with ID: 6d36aab0-e3e8-4a5f-bdae-ede7d2338dbb
-2025-06-05 01:28:03 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-05 01:28:03 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\1f3345ce-8723-43ac-9cbc-3e801f74f8cb.jpeg
-2025-06-05 01:28:03 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-05 01:28:03 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\7f2aafc7-0b79-4b8d-8d78-5e3da7e70a0b.png
-2025-06-05 01:28:04 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-05 01:28:59 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-05 01:28:59 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-05 01:28:59 | INFO     | app.api.endpoints.process:process_book:191 - Book processing started: 6d36aab0-e3e8-4a5f-bdae-ede7d2338dbb, page: 41cf0169-d9bf-4d53-b80e-d0d589030618
-2025-06-05 01:30:12 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-05 01:30:12 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-05 01:30:12 | INFO     | app.api.endpoints.process:get_process_status:256 - Status retrieved for process: 6d36aab0-e3e8-4a5f-bdae-ede7d2338dbb
-2025-06-05 01:30:14 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-05 01:32:50 | INFO     | app.main:shutdown_event:59 - Application shutting down...
-2025-06-05 01:32:52 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-06-05 01:33:44 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-06-05 01:34:24 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-06-05 01:34:41 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
-2025-06-05 01:34:42 | INFO     | app.main:startup_event:55 - Application starting up...
-2025-06-05 01:35:37 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-05 01:35:37 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-05 01:35:37 | INFO     | app.api.endpoints.process:initiate_process:154 - Process initiated with ID: 06eb4e84-efca-42f4-b0e3-3700f37c8aa3
-2025-06-05 01:36:00 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-05 01:36:00 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\78d30101-8a3e-4a78-82fd-87206e8e294d.jpeg
-2025-06-05 01:36:00 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-05 01:36:00 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\9b19ed2f-78f7-41f9-bc24-44d623249042.jpg
-2025-06-05 01:36:01 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-05 01:36:19 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-05 01:36:19 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-05 01:36:19 | INFO     | app.api.endpoints.process:process_book:193 - Book processing started: 06eb4e84-efca-42f4-b0e3-3700f37c8aa3, page: 3db4ed8f-8273-4d8d-8836-aa6abd836967
-2025-06-05 01:36:24 | INFO     | app.api.endpoints.process:process_image_background:94 - Masked image: C:\Users\alkaf\AppData\Local\Temp\tmpcnuyflj_.png
-2025-06-05 01:37:46 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-05 01:37:46 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
-2025-06-05 01:37:46 | INFO     | app.api.endpoints.process:get_process_status:258 - Status retrieved for process: 06eb4e84-efca-42f4-b0e3-3700f37c8aa3
-2025-06-05 01:37:49 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:29:30 | INFO     | app.api.endpoints.health:health_check:39 - Health check performed successfully
+2025-07-01 05:29:32 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:29:32 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:29:32 | INFO     | app.api.endpoints.process:initiate_process:133 - Process initiated with ID: 20b396f4-5115-496c-9577-b88809a93e51
+2025-07-01 05:29:44 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:29:44 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\3ccc5e29-9582-4722-9e5e-50423a596387.png
+2025-07-01 05:29:44 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:29:44 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\3cad45c5-3dac-4f61-80dd-64338b60e947.jpg
+2025-07-01 05:29:44 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:30:10 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:30:10 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:30:10 | INFO     | app.api.endpoints.process:process_book:173 - Processing started: 20b396f4-5115-496c-9577-b88809a93e51, page: 740b11f8-ddf8-4f51-b91c-2713130bdbaa
+2025-07-01 05:35:18 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
+2025-07-01 05:35:18 | INFO     | app.main:startup_event:56 - Application starting up...
+2025-07-01 05:35:24 | INFO     | app.api.endpoints.health:health_check:39 - Health check performed successfully
+2025-07-01 05:35:27 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:35:27 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:35:27 | INFO     | app.api.endpoints.process:initiate_process:133 - Process initiated with ID: c6afa193-8651-4153-9c26-8f1cefafe5d8
+2025-07-01 05:35:41 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:35:41 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\97060dd6-97e2-4822-9257-2f726eb42238.png
+2025-07-01 05:35:41 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:35:41 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\5f4dc703-8b05-496c-bc9b-cc914a80a2d4.png
+2025-07-01 05:35:41 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:35:45 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:35:45 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:35:45 | INFO     | app.api.endpoints.process:process_book:173 - Processing started: c6afa193-8651-4153-9c26-8f1cefafe5d8, page: a56aa3f9-4e12-49b1-aa51-e17df892ec2f
+2025-07-01 05:39:59 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
+2025-07-01 05:39:59 | INFO     | app.main:startup_event:56 - Application starting up...
+2025-07-01 05:40:09 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:40:09 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:40:14 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:40:21 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:40:25 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:40:33 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:40:33 | INFO     | app.api.endpoints.cache:get_cache_status:36 - Cache status retrieved successfully with 0 entries
+2025-07-01 05:40:39 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:40:39 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:40:39 | INFO     | app.api.endpoints.process:initiate_process:133 - Process initiated with ID: 14001182-3600-4047-bd8b-73c93fa5117c
+2025-07-01 05:40:42 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:40:42 | INFO     | app.api.endpoints.cache:get_cache_status:36 - Cache status retrieved successfully with 1 entries
+2025-07-01 05:41:00 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:41:00 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\481383d4-4d46-4fd9-a576-1664d69248d7.png
+2025-07-01 05:41:00 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:41:00 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\20646763-c411-4713-a580-78d470c3f55d.jpg
+2025-07-01 05:41:01 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:41:06 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:41:06 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:41:06 | INFO     | app.api.endpoints.process:process_book:173 - Processing started: 14001182-3600-4047-bd8b-73c93fa5117c, page: ecbd4a84-1805-4258-892e-9a0ce097959d
+2025-07-01 05:52:25 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
+2025-07-01 05:52:26 | INFO     | app.main:startup_event:56 - Application starting up...
+2025-07-01 05:52:44 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:52:45 | INFO     | app.api.endpoints.cache:get_cache_status:36 - Cache status retrieved successfully with 0 entries
+2025-07-01 05:52:49 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:52:49 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:52:49 | INFO     | app.api.endpoints.process:initiate_process:141 - Process initiated with ID: db7edf60-2dbc-45d5-a377-b83d6d4d7404
+2025-07-01 05:52:50 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:52:50 | INFO     | app.api.endpoints.cache:get_cache_status:36 - Cache status retrieved successfully with 1 entries
+2025-07-01 05:53:08 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:53:08 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\f30e4c1e-206a-41b9-8e52-197c111a26ab.png
+2025-07-01 05:53:08 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:53:08 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\6f75ac0d-f5e7-4884-bcab-8e6d29a1e505.png
+2025-07-01 05:53:08 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:53:12 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:53:12 | INFO     | app.api.endpoints.cache:get_cache_status:36 - Cache status retrieved successfully with 1 entries
+2025-07-01 05:53:26 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:53:26 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:53:26 | ERROR    | app.api.endpoints.process:get_process_status:238 - Status retrieval failed: 404: Process not found
+2025-07-01 05:53:36 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:53:36 | INFO     | app.api.endpoints.cache:get_cache_status:36 - Cache status retrieved successfully with 1 entries
+2025-07-01 05:53:43 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:53:43 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:53:43 | INFO     | app.api.endpoints.process:process_book:181 - Processing started: db7edf60-2dbc-45d5-a377-b83d6d4d7404, page: b0c5e5b4-23f6-4395-994f-7c3e90f03095
+2025-07-01 05:53:43 | INFO     | app.api.endpoints.process:process_image_background:64 - Starting background task for db7edf60-2dbc-45d5-a377-b83d6d4d7404/b0c5e5b4-23f6-4395-994f-7c3e90f03095
+2025-07-01 05:53:43 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:53:43 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:53:47 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:53:47 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:54:03 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:54:03 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:54:10 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:54:10 | INFO     | app.api.endpoints.cache:get_cache_status:36 - Cache status retrieved successfully with 1 entries
+2025-07-01 05:54:11 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:54:11 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:54:13 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:54:13 | INFO     | app.api.endpoints.cache:get_cache_status:36 - Cache status retrieved successfully with 1 entries
+2025-07-01 05:54:13 | ERROR    | app.api.endpoints.process:process_image_background:125 - Segmind API request timed out
+2025-07-01 05:54:13 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:54:13 | INFO     | app.api.endpoints.cache:get_cache_status:36 - Cache status retrieved successfully with 1 entries
+2025-07-01 05:54:14 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:54:14 | INFO     | app.api.endpoints.cache:get_cache_status:36 - Cache status retrieved successfully with 1 entries
+2025-07-01 05:54:15 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:54:15 | INFO     | app.api.endpoints.cache:get_cache_status:36 - Cache status retrieved successfully with 1 entries
+2025-07-01 05:54:16 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:54:16 | INFO     | app.api.endpoints.cache:get_cache_status:36 - Cache status retrieved successfully with 1 entries
+2025-07-01 05:54:23 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:54:23 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:55:12 | INFO     | app.main:shutdown_event:60 - Application shutting down...
+2025-07-01 05:55:14 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
+2025-07-01 05:55:14 | INFO     | app.main:startup_event:56 - Application starting up...
+2025-07-01 05:55:21 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:55:21 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:55:21 | INFO     | app.api.endpoints.process:initiate_process:141 - Process initiated with ID: 10d509e4-d71d-43bd-8f1a-2913981b481e
+2025-07-01 05:55:23 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:55:24 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\f65e4082-ad03-4d57-a0e6-ffed90f904c6.png
+2025-07-01 05:55:24 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:55:24 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\6f3b0b82-c8f7-4575-a2d2-6756c579e98a.png
+2025-07-01 05:55:24 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:55:27 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:55:27 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:55:27 | INFO     | app.api.endpoints.process:process_book:181 - Processing started: 10d509e4-d71d-43bd-8f1a-2913981b481e, page: dac11409-b77d-45e5-a01c-2d5865134da5
+2025-07-01 05:55:27 | INFO     | app.api.endpoints.process:process_image_background:64 - Starting background task for 10d509e4-d71d-43bd-8f1a-2913981b481e/dac11409-b77d-45e5-a01c-2d5865134da5
+2025-07-01 05:55:27 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:55:27 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:55:31 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:55:31 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:55:53 | INFO     | app.api.endpoints.process:process_image_background:122 - Completed background task for 10d509e4-d71d-43bd-8f1a-2913981b481e/dac11409-b77d-45e5-a01c-2d5865134da5
+2025-07-01 05:56:22 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:56:22 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:56:23 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 05:56:54 | INFO     | app.main:shutdown_event:60 - Application shutting down...
+2025-07-01 05:56:56 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
+2025-07-01 05:56:56 | INFO     | app.main:startup_event:56 - Application starting up...
+2025-07-01 05:57:39 | INFO     | app.api.endpoints.health:health_check:39 - Health check performed successfully
+2025-07-01 06:00:06 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:00:06 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:00:06 | ERROR    | app.api.endpoints.process:process_book:193 - Book processing failed: 400: Invalid init_id
+2025-07-01 06:00:19 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:00:19 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:00:19 | INFO     | app.api.endpoints.process:initiate_process:141 - Process initiated with ID: 474f70e3-34ab-40ee-81c9-38a29195fbf4
+2025-07-01 06:00:30 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:00:30 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\a787c460-649b-4608-90ca-59b383f5f9e3.png
+2025-07-01 06:00:30 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:00:30 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\02bb269b-5afc-4411-9453-2a183c95c2e4.jpg
+2025-07-01 06:00:30 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:00:35 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:00:35 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:00:35 | INFO     | app.api.endpoints.process:process_book:181 - Processing started: 474f70e3-34ab-40ee-81c9-38a29195fbf4, page: 4cd82ad5-2945-4734-8637-65873c603f41
+2025-07-01 06:00:35 | INFO     | app.api.endpoints.process:process_image_background:64 - Starting background task for 474f70e3-34ab-40ee-81c9-38a29195fbf4/4cd82ad5-2945-4734-8637-65873c603f41
+2025-07-01 06:00:35 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:00:35 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:00:39 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:00:39 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:00:51 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:00:51 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:00:59 | INFO     | app.api.endpoints.process:process_image_background:122 - Completed background task for 474f70e3-34ab-40ee-81c9-38a29195fbf4/4cd82ad5-2945-4734-8637-65873c603f41
+2025-07-01 06:02:09 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:02:09 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:02:10 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:03:01 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
+2025-07-01 06:03:01 | INFO     | app.main:startup_event:56 - Application starting up...
+2025-07-01 06:03:07 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:03:07 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:03:07 | INFO     | app.api.endpoints.process:initiate_process:141 - Process initiated with ID: d5131048-d48c-4e59-a23f-2950635a2c79
+2025-07-01 06:03:21 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:03:22 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\ce5039e4-43e2-48bb-9fdd-20107cec9945.png
+2025-07-01 06:03:22 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:03:22 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\4859a1b1-465e-4672-800b-f2cfa3988e64.jpg
+2025-07-01 06:03:22 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:03:25 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:03:25 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:03:25 | INFO     | app.api.endpoints.process:process_book:181 - Processing started: d5131048-d48c-4e59-a23f-2950635a2c79, page: 6fdf6e34-ed0b-4ae2-b25a-ac0b20f90276
+2025-07-01 06:03:25 | INFO     | app.api.endpoints.process:process_image_background:64 - Starting background task for d5131048-d48c-4e59-a23f-2950635a2c79/6fdf6e34-ed0b-4ae2-b25a-ac0b20f90276
+2025-07-01 06:03:25 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:03:25 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:03:29 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:03:29 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:03:34 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:03:34 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:03:39 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:03:39 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:03:44 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:03:44 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:03:49 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:03:49 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:03:53 | INFO     | app.api.endpoints.process:process_image_background:122 - Completed background task for d5131048-d48c-4e59-a23f-2950635a2c79/6fdf6e34-ed0b-4ae2-b25a-ac0b20f90276
+2025-07-01 06:03:55 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:03:55 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:03:56 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:04:35 | INFO     | app.main:shutdown_event:60 - Application shutting down...
+2025-07-01 06:04:37 | INFO     | app.core.cache:__init__:15 - Cache initialized with TTL: 3600s, maxsize: 1000
+2025-07-01 06:04:38 | INFO     | app.main:startup_event:56 - Application starting up...
+2025-07-01 06:04:39 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:04:39 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:04:39 | INFO     | app.api.endpoints.process:initiate_process:141 - Process initiated with ID: f9139163-240b-43a1-b168-913daf8debce
+2025-07-01 06:04:41 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:04:41 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\c072e2ef-0dc3-4ac6-b26e-e59f692e6443.png
+2025-07-01 06:04:41 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:04:41 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\857beefe-dda0-421b-814d-3f5d15b1759c.jpg
+2025-07-01 06:04:41 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:04:45 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:04:45 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:04:45 | INFO     | app.api.endpoints.process:process_book:181 - Processing started: f9139163-240b-43a1-b168-913daf8debce, page: d2dd7cea-f6cd-46ba-851e-f9e68324f2e0
+2025-07-01 06:04:45 | INFO     | app.api.endpoints.process:process_image_background:64 - Starting background task for f9139163-240b-43a1-b168-913daf8debce/d2dd7cea-f6cd-46ba-851e-f9e68324f2e0
+2025-07-01 06:04:45 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:04:45 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:04:49 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:04:49 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:04:54 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:04:54 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:04:59 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:04:59 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:05:04 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:05:04 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:05:09 | INFO     | app.api.endpoints.process:process_image_background:122 - Completed background task for f9139163-240b-43a1-b168-913daf8debce/d2dd7cea-f6cd-46ba-851e-f9e68324f2e0
+2025-07-01 06:05:09 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:05:09 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:05:17 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:06:19 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:06:19 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:06:28 | INFO     | app.api.endpoints.seo:generate_seo_keywords:49 - Generated 45 SEO keywords
+2025-07-01 06:07:09 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:07:09 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:07:09 | INFO     | app.api.endpoints.process:initiate_process:141 - Process initiated with ID: 9397f92f-87fe-4dc7-a9d7-f81e9981332f
+2025-07-01 06:07:22 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:07:22 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\60aec984-4218-4d43-8745-4d9ef932edf2.png
+2025-07-01 06:07:22 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:07:22 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\fb0bb49f-0ea3-4797-bab9-132e5829ea05.jpg
+2025-07-01 06:07:22 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:10:28 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:10:28 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:10:28 | INFO     | app.api.endpoints.process:initiate_process:141 - Process initiated with ID: 2228539f-2bd6-4e53-b0f7-f63e19a8153e
+2025-07-01 06:10:42 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:10:42 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\57069802-5203-4933-b485-fa65b837b335.jpg
+2025-07-01 06:10:42 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:10:42 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\2291c757-5cee-4ccb-8eb7-38cab156deab.jpg
+2025-07-01 06:10:42 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:10:43 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:10:44 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:10:44 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:10:44 | INFO     | app.api.endpoints.process:process_book:181 - Processing started: 2228539f-2bd6-4e53-b0f7-f63e19a8153e, page: 7e0ba44c-98d4-4c6e-9bbb-417c3538ad75
+2025-07-01 06:10:44 | INFO     | app.api.endpoints.process:process_image_background:64 - Starting background task for 2228539f-2bd6-4e53-b0f7-f63e19a8153e/7e0ba44c-98d4-4c6e-9bbb-417c3538ad75
+2025-07-01 06:10:44 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:10:44 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:10:48 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:10:48 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:10:53 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:10:53 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:10:58 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:10:58 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:11:04 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:11:04 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:11:06 | INFO     | app.api.endpoints.process:process_image_background:122 - Completed background task for 2228539f-2bd6-4e53-b0f7-f63e19a8153e/7e0ba44c-98d4-4c6e-9bbb-417c3538ad75
+2025-07-01 06:11:09 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:11:09 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:11:11 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:15:28 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:15:28 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:15:28 | INFO     | app.api.endpoints.process:initiate_process:141 - Process initiated with ID: 4dc400ea-29b3-455a-847c-0083b73da58d
+2025-07-01 06:15:43 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:15:43 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\5bb39304-508b-4713-a0f7-f10dd8b13011.jpeg
+2025-07-01 06:15:43 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:15:43 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\31161be3-ffe9-4cb4-b0ac-02b3eb5a58c9.jpg
+2025-07-01 06:15:44 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:15:44 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:15:55 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:15:55 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:15:55 | INFO     | app.api.endpoints.process:process_book:181 - Processing started: 4dc400ea-29b3-455a-847c-0083b73da58d, page: c5ebf431-86c8-4b9d-b767-a7745dd142b9
+2025-07-01 06:15:55 | INFO     | app.api.endpoints.process:process_image_background:64 - Starting background task for 4dc400ea-29b3-455a-847c-0083b73da58d/c5ebf431-86c8-4b9d-b767-a7745dd142b9
+2025-07-01 06:15:56 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:15:56 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:16:00 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:16:00 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:16:05 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:16:05 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:16:10 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:16:10 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:16:13 | INFO     | app.api.endpoints.process:process_image_background:122 - Completed background task for 4dc400ea-29b3-455a-847c-0083b73da58d/c5ebf431-86c8-4b9d-b767-a7745dd142b9
+2025-07-01 06:16:15 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:16:15 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:16:21 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:16:39 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:16:39 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\daf1d33f-c2ac-441c-be64-4282decdee76.jpeg
+2025-07-01 06:16:39 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:16:39 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:16:39 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\1ec4e96d-a73d-458e-b654-6df900af5ca5.png
+2025-07-01 06:16:40 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:16:44 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:16:44 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:16:44 | INFO     | app.api.endpoints.process:process_book:181 - Processing started: 4dc400ea-29b3-455a-847c-0083b73da58d, page: e581b92f-5f36-463e-a360-4654f2156b88
+2025-07-01 06:16:44 | INFO     | app.api.endpoints.process:process_image_background:64 - Starting background task for 4dc400ea-29b3-455a-847c-0083b73da58d/e581b92f-5f36-463e-a360-4654f2156b88
+2025-07-01 06:16:44 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:16:44 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:16:48 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:16:48 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:16:53 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:16:53 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:16:58 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:16:58 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:17:03 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:17:03 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:17:04 | INFO     | app.api.endpoints.process:process_image_background:122 - Completed background task for 4dc400ea-29b3-455a-847c-0083b73da58d/e581b92f-5f36-463e-a360-4654f2156b88
+2025-07-01 06:17:08 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:17:08 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:17:09 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:18:30 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:18:30 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:18:30 | INFO     | app.api.endpoints.process:initiate_process:141 - Process initiated with ID: e33dff09-e033-4d9c-9eca-bb630246abb7
+2025-07-01 06:18:43 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:18:43 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\9d031e08-ab44-4990-9901-3b0b905bdaaf.png
+2025-07-01 06:18:43 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:18:43 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\2628adbb-8221-4a13-8493-f9633c57c9e5.jpg
+2025-07-01 06:18:43 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:18:44 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:18:46 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:18:46 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:18:46 | INFO     | app.api.endpoints.process:process_book:181 - Processing started: e33dff09-e033-4d9c-9eca-bb630246abb7, page: 852c6860-5b89-4aa4-b9e8-b7175151924c
+2025-07-01 06:18:46 | INFO     | app.api.endpoints.process:process_image_background:64 - Starting background task for e33dff09-e033-4d9c-9eca-bb630246abb7/852c6860-5b89-4aa4-b9e8-b7175151924c
+2025-07-01 06:18:46 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:18:46 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:18:50 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:18:50 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:18:55 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:18:55 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:19:00 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:19:00 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:19:01 | INFO     | app.api.endpoints.process:process_image_background:122 - Completed background task for e33dff09-e033-4d9c-9eca-bb630246abb7/852c6860-5b89-4aa4-b9e8-b7175151924c
+2025-07-01 06:19:05 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:19:05 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:19:07 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:19:56 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:19:56 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:19:56 | INFO     | app.api.endpoints.process:initiate_process:141 - Process initiated with ID: cf272b6f-7c4e-406d-b84b-f51c36c8c019
+2025-07-01 06:20:18 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:20:18 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\0146f5b5-537e-48c2-a036-8f9197336be4.jpeg
+2025-07-01 06:20:18 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:20:18 | INFO     | app.api.endpoints.upload:upload_file:50 - File uploaded successfully: storage\uploads\81628d04-aaba-41c8-8d33-43a338b28559.png
+2025-07-01 06:20:18 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:20:19 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:20:20 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:20:20 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:20:20 | INFO     | app.api.endpoints.process:process_book:181 - Processing started: cf272b6f-7c4e-406d-b84b-f51c36c8c019, page: ecccaecd-d942-42ed-9ef6-3f9c5e2f34fc
+2025-07-01 06:20:20 | INFO     | app.api.endpoints.process:process_image_background:64 - Starting background task for cf272b6f-7c4e-406d-b84b-f51c36c8c019/ecccaecd-d942-42ed-9ef6-3f9c5e2f34fc
+2025-07-01 06:20:20 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:20:20 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:20:24 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:20:24 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:20:29 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:20:29 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:20:34 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:20:34 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:20:37 | INFO     | app.api.endpoints.process:process_image_background:122 - Completed background task for cf272b6f-7c4e-406d-b84b-f51c36c8c019/ecccaecd-d942-42ed-9ef6-3f9c5e2f34fc
+2025-07-01 06:20:39 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:20:39 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:20:41 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check
+2025-07-01 06:25:00 | WARNING  | app.middleware.api_key:verify_api_key:17 - No API key set in environment, skipping API key check

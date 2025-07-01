@@ -45,6 +45,9 @@ def mask_child_face(input_path):
             net.setInput(blob)
             detections = net.forward()
             
+            # Convert to BGRA to support transparency
+            image = cv2.cvtColor(image, cv2.COLOR_BGR2BGRA)
+            
             faces_detected = 0
             for i in range(detections.shape[2]):
                 confidence = detections[0, 0, i, 2]
@@ -55,11 +58,10 @@ def mask_child_face(input_path):
                     startX, startY = max(0, startX), max(0, startY)
                     endX, endY = min(w, endX), min(h, endY)
                     
-                    face_roi = image[startY:endY, startX:endX]
-                    blurred_face = cv2.GaussianBlur(face_roi, (99, 99), 30)
-                    image[startY:endY, startX:endX] = blurred_face
+                    # Set face region to fully transparent
+                    image[startY:endY, startX:endX, 3] = 0
             
-            logger.info(f"Detected and masked {faces_detected} faces in the image")
+            logger.info(f"Detected and set {faces_detected} faces to transparent")
             
         except Exception as e:
             logger.error(f"Error during face detection and masking: {str(e)}")
@@ -80,7 +82,7 @@ def mask_child_face(input_path):
                 _, img_encoded = cv2.imencode('.png', image)
                 buffer.write(img_encoded.tobytes())
             
-            logger.info(f"Successfully saved masked image to {output_path}")
+            logger.info(f"Successfully saved transparent-masked image to {output_path}")
             return temp_file.name
             
         except Exception as e:

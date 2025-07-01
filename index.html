@@ -230,9 +230,22 @@
               class="w-full px-3 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-transparent"></textarea>
           </div>
 
-          <div class="mb-4">
+          <div class="mb-4" style="display: none;">
             <label class="block text-sm font-medium text-gray-700 mb-1">Select Style</label>
             <div class="grid grid-cols-1 gap-3">
+
+              <label class="flex items-center p-3 border rounded-lg cursor-pointer hover:bg-gray-50">
+                <input type="radio" name="style" class="style-radio h-4 w-4 text-sky-500" value="no-style"
+                  data-prompt="">
+                <div class="ml-3 flex items-center flex-1">
+                  <div class="flex-1">
+                    <span class="block text-sm font-medium text-gray-700">No Style</span>
+                    <span class="block text-sm text-gray-500">No style applied</span>
+                  </div>
+                  <img src="" alt="No Style Reference" class="w-16 h-16 object-contain rounded-md ml-4" id="noStyle">
+                </div>
+              </label>
+
               <label class="flex items-center p-3 border rounded-lg cursor-pointer hover:bg-gray-50">
                 <input type="radio" name="style" class="style-radio h-4 w-4 text-sky-500" value="hat-style"
                   data-prompt="Style: Add a large orange/yellow sun hat into the head blending into the image." checked>
@@ -372,7 +385,13 @@
     <div id="imagePreview" class="mb-4 hidden">
       <h3 class="text-md font-medium mb-2 text-gray-700">Image
         Preview</h3>
-      <div class="grid grid-cols-2 gap-4">
+      <div class="grid grid-cols-3 gap-4">
+        <div>
+          <p class="text-sm text-gray-500 mb-1">Target Image</p>
+          <div id="targetImageContainer" class="h-auto bg-gray-100 rounded-md flex items-center justify-center">
+            <span class="text-sm text-gray-400">No target image uploaded</span>
+          </div>
+        </div>
         <div>
           <p class="text-sm text-gray-500 mb-1">Book Image</p>
           <div id="sourceImageContainer" class="h-auto bg-gray-100 rounded-md flex items-center justify-center">
@@ -424,39 +443,42 @@
 
       //Default Promt
       prompt: `
-# Face Swapping Task: Insert Target Face into Masked Source Scene
+      Face Swap Instructions:
 
-You are an advanced image editing AI specializing in realistic face swapping while preserving scene context. Your task is to insert the child's face from the **target image** into the **masked area** of the **source image**, based on the masked version provided.
+      Core Logic:
+      Use the masked source image to locate face position and orientation. Replace facial landmarks (eyes, nose, mouth, jawline, eyebrows) from the target image, while keeping the source’s head angle, tilt, and proportions.
 
----
+      Visual Style:
+      Maintain the source image’s artistic style, lighting, shadows, and color tones. All non-facial elements (background, dress, peacock, squirrel, flower) must remain exactly as in the source.
 
-## Input:
-- **Source Image**: A detailed illustrated scene from a book.
-- **Masked Source Image**: The same scene with one character's face blurred or marked — this indicates where the target face should be inserted.
-- **Target Image**: A clear, front-facing portrait of a child.
+      Facial Mapping:
+      Update from target image:
 
----
+      Eyes (including corners)
+      Nose
+      Mouth (including lip corners)
+      Jawline & chin
+      Eyebrows
 
-## Instructions:
+      Retain from source image:
+      Cheekbones
+      Forehead & hairline
+      Ears
+      Philtrum
 
-1. **Face Swapping Logic:**
-   - Use the **masked source image** to identify the exact area/character in the **source image** where the face needs to be replaced.
-   - Swap in the **target face** onto that area in the **original (unmasked) source image**.
+      Facial expression and orientation
 
-2. **Visual Consistency:**
-   - Preserve all original elements in the source image (background, objects, artistic style, composition).
-   - Match color tones to seamlessly blend the new face into the scene.
+      Expression & Alignment:
+      Match the source’s head pose precisely. Keep the facial expression identical to the source. Adjust only the landmarks to reflect the target’s features. The generated face should be adorable and blend naturally.
 
-3. **Orientation & Proportions:**
-   - Align facial angle and size with the original character in the source image.
-   - Ensure the new face feels naturally integrated into the original illustration.
+      Output:
+      A composite image where the child’s face in the source is replaced with the target’s features, keeping the expression, head pose, and all other source elements intact. Result should look like the source character with the target’s facial features, naturally and cutely integrated.
 
+      Restrictions:
 
-
----
-
-##Output:
-- A single **composite image** with the child's face accurately and naturally inserted into the **unmasked source image**, fully replacing the blurred face from the masked version while preserving the original artistic context.
+      Do not use facial expression or any elements from the target image other than specified landmarks.
+      Background, dress, peacock, squirrel, and flower must be identical to the source image.
+      
       `,
     };
     const hatStyleImageUrl = CONFIG.root + "/image/hat.png";
@@ -623,7 +645,7 @@ You are an advanced image editing AI specializing in realistic face swapping whi
             sourceFileUrl = sourceResponse.data.file_url;
 
             // Show source image preview
-            $('#sourceImageContainer').html(`<img src="${sourceFileUrl}" class="h-full w-full object-contain img-popup" />`);
+            $('#sourceImageContainer').html(`<img src="${sourceFileUrl}" class="h-96 w-full object-contain img-popup" />`);
             $('#imagePreview').removeClass('hidden');
 
             // If target file is selected, upload it too
@@ -634,6 +656,11 @@ You are an advanced image editing AI specializing in realistic face swapping whi
 
                 if (targetResponse.status_code === 2000) {
                   targetFileUrl = targetResponse.data.file_url;
+
+                  // Show target image preview
+                  $('#targetImageContainer').html(`<img src="${targetFileUrl}" class="h-96 w-full object-contain img-popup" />`);
+                  $('#imagePreview').removeClass('hidden');
+
                   showNotification('Files uploaded successfully', 'success');
                   setCompletedStep(2);
                   showPanel('processBookPanel');
@@ -668,7 +695,7 @@ You are an advanced image editing AI specializing in realistic face swapping whi
         setButtonLoading($btn, true);
 
         const fullPromptText = $('#fullPrompt').val();
-        const stylePrompt = $('input[name="style"]:checked').attr('data-prompt') || '';
+        const stylePrompt = '';
 
         let modifiedPrompt;
         if (fullPromptText.includes('##Output:')) {
@@ -870,7 +897,7 @@ You are an advanced image editing AI specializing in realistic face swapping whi
           updateSessionInfo();
 
           if (processData.status === 'COMPLETED' && processData.url) {
-            $('#processedImageContainer').html(`<img src="${processData.url}" class="h-full w-full object-contain img-popup" />`);
+            $('#processedImageContainer').html(`<img src="${processData.url}" class="h-96 w-full object-contain img-popup" />`);
             showNotification('Processing completed', 'success');
             setCompletedStep(4);
             setCompletedStep(5);
@@ -879,7 +906,7 @@ You are an advanced image editing AI specializing in realistic face swapping whi
             showNotification('Processing failed', 'error');
             hideLoadingScreen();
           } else {
-            showNotification('Processing status: ' + processData.status, 'info');
+            console.log('Processing status: ' + processData.status, 'info');
             // Auto-check again after a delay if still processing
             if (processData.status === 'PENDING' || processData.status === 'PROCESSING') {
               setTimeout(() => checkStatus(), CONFIG.statusCheckInterval);

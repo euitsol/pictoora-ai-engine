@@ -31,3 +31,6 @@ uvicorn
 win32-setctime
 opencv-python 
 numpy 
+requests
+aiofiles
+aiohttp
